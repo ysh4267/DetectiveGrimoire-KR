@@ -1,0 +1,46 @@
+centralboxes__CentralBoxesAll            fonts=[3, 278]       chars=686   translated=348  missing=0
+chalgames__burle                         fonts=[5]            chars=130   translated=1    missing=0
+chalgames__echo                          fonts=[48, 90]       chars=147   translated=3    missing=0
+chalgames__harper                        fonts=[4]            chars=144   translated=2    missing=0
+chalgames__sally                         fonts=[4]            chars=134   translated=2    missing=0
+chalgames__vanDePeer                     fonts=[48]           chars=149   translated=2    missing=0
+chalgames__weybridge                     fonts=[2]            chars=128   translated=1    missing=0
+menus__AreaNotesGraphic                  fonts=[121, 140]     chars=384   translated=51   missing=0
+menus__ClueGraphic                       fonts=[115, 238, 265] chars=505   translated=131  missing=0
+menus__DialogueBoxGraphic                fonts=[165, 168]     chars=123   translated=6    missing=0
+menus__HeadphonesGraphic                 fonts=[21]           chars=136   translated=2    missing=0
+menus__MainMenuGraphic                   fonts=[244]          chars=309   translated=22   missing=0
+menus__MapGraphic                        fonts=[6, 11]        chars=195   translated=8    missing=0
+menus__OptionsGraphic                    fonts=[6, 61]        chars=184   translated=12   missing=0
+menus__ProfileGraphic                    fonts=[149, 185]     chars=475   translated=110  missing=0
+menus__ProfileSelectGraphic              fonts=[154]          chars=117   translated=0    missing=0
+menus__TitleScreenGraphic                fonts=[37, 375, 589] chars=224   translated=95   missing=0
+minds__MindsGraphic                      fonts=[16, 81]       chars=401   translated=114  missing=0
+minigames__BinMinigameGraphic            fonts=[2, 12]        chars=209   translated=29   missing=0
+minigames__ChemMinigameGraphic           fonts=[2, 12, 203]   chars=227   translated=36   missing=0
+minigames__CogsMinigameGraphic           fonts=[2, 12]        chars=209   translated=29   missing=0
+minigames__CostumeMinigameGraphic        fonts=[2, 12]        chars=216   translated=29   missing=0
+minigames__DoorMinigameGraphic           fonts=[2, 12]        chars=216   translated=29   missing=0
+minigames__FootprintMinigameGraphic      fonts=[2, 12]        chars=216   translated=29   missing=0
+minigames__GateMinigameGraphic           fonts=[2, 12]        chars=216   translated=29   missing=0
+minigames__HandsMinigameGraphic          fonts=[2, 12]        chars=216   translated=29   missing=0
+minigames__KeyMinigameGraphic            fonts=[2, 12]        chars=216   translated=29   missing=0
+minigames__LockpickMinigameGraphic       fonts=[2, 12]        chars=216   translated=29   missing=0
+minigames__PadlockMinigameGraphic        fonts=[2, 12]        chars=216   translated=29   missing=0
+minigames__PhotoMinigameGraphic          fonts=[2, 12]        chars=216   translated=29   missing=0
+minigames__ReedsMinigameGraphic          fonts=[2, 12]        chars=216   translated=29   missing=0
+minigames__SoundMinigameGraphic          fonts=[51, 89]       chars=219   translated=29   missing=0
+sideInfo__SideInfo                       fonts=[24]           chars=117   translated=0    missing=0
+talk__TalkingTreeGraphic                 fonts=[225]          chars=198   translated=14   missing=0
+talk__burle                              fonts=[17, 638]      chars=451   translated=149  missing=0
+talk__echo                               fonts=[18]           chars=540   translated=210  missing=0
+talk__folder                             fonts=[19, 737]      chars=521   translated=199  missing=0
+talk__grimoire                           fonts=[17, 279, 974] chars=534   translated=230  missing=0
+talk__harper                             fonts=[17]           chars=497   translated=189  missing=0
+talk__james                              fonts=[17]           chars=393   translated=84   missing=0
+talk__littleGirl                         fonts=[17]           chars=368   translated=86   missing=0
+talk__sally                              fonts=[19]           chars=496   translated=197  missing=0
+talk__vanDePeer                          fonts=[17, 641]      chars=511   translated=168  missing=0
+talk__weybridge                          fonts=[17]           chars=487   translated=186  missing=0
+
+patched 44 SWFs, 0 missing-glyph warnings

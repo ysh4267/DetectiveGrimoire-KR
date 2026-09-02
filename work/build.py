@@ -50,6 +50,14 @@ def collect():
             continue
         for swf in row['swfs']:
             per_swf.setdefault(swf, {}).update(tr)
+
+    # SWFs whose only text is decorative digits carry no translations, but they
+    # still need the font swap or their numerals stay in the original face
+    # while every neighbouring label switches to the Korean one.
+    manifest = json.load(open(os.path.join(ROOT, 'work', 'manifest_en.json'),
+                              encoding='utf-8'))
+    for e in manifest:
+        per_swf.setdefault(e['swf'], {})
     return per_swf, missing_files
 
 
