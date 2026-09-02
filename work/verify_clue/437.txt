@@ -1,0 +1,16 @@
+[
+xmin -1797
+ymin 128
+xmax 5396
+ymax 1427
+translatex -2446
+][
+font 115
+height 600
+color #000000
+x 2177
+y 600
+]레밍턴 사무실의 [
+x 1901
+y 1240
+]커튼에서 찢어낸 것

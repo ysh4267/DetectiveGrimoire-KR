@@ -1,0 +1,16 @@
+[
+xmin -1597
+ymin 132
+xmax 5043
+ymax 1423
+translatex -2446
+][
+font 115
+height 600
+color #000000
+x 1757
+y 600
+]뒷부분에서 한 장이 [
+x 2377
+y 1240
+]찢겨 나간 듯함

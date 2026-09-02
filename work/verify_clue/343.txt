@@ -1,0 +1,16 @@
+[
+xmin -1771
+ymin 110
+xmax 5380
+ymax 1279
+translatex -2446
+][
+font 115
+height 600
+color #000000
+x 2114
+y 600
+]보기의 발은 물통 [
+x 2182
+y 1240
+]속에 가려져 있음

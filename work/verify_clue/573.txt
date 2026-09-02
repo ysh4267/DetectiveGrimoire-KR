@@ -1,0 +1,16 @@
+[
+xmin -2383
+ymin 107
+xmax 5841
+ymax 1280
+translatex -2446
+][
+font 115
+height 600
+color #000000
+x 867
+y 600
+]샐리보다 덩치 큰 누군가가 [
+x 1487
+y 1240
+]훔쳐 입어 늘어나 있음

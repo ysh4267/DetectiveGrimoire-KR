@@ -1,0 +1,16 @@
+[
+xmin -2324
+ymin 107
+xmax 5920
+ymax 1280
+translatex -2446
+][
+font 115
+height 600
+color #000000
+x 2030
+y 600
+]최근 24시간 안에 [
+x 1280
+y 1240
+]적어도 한 번 발사되었음

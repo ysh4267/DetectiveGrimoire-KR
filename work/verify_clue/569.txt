@@ -1,0 +1,16 @@
+[
+xmin -2010
+ymin 107
+xmax 5479
+ymax 1427
+translatex -2446
+][
+font 115
+height 600
+color #000000
+x 2044
+y 600
+]보기 분장에 쓰인 [
+x 2456
+y 1240
+]레깅스로 보임

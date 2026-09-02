@@ -1,0 +1,16 @@
+[
+xmin -1785
+ymin 133
+xmax 5384
+ymax 1427
+translatex -2446
+][
+font 115
+height 600
+color #000000
+x 1557
+y 600
+]기념품점의 보기 모자 [
+x 1625
+y 1240
+]사이에 숨겨져 있었음

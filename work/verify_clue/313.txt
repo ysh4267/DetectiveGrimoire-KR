@@ -1,0 +1,16 @@
+[
+xmin -2397
+ymin 107
+xmax 5883
+ymax 1423
+translatex -2446
+][
+font 115
+height 600
+color #000000
+x 1225
+y 600
+]탐험가의 일지에서 찢겨 [
+x 1569
+y 1240
+]나간 잃어버린 페이지

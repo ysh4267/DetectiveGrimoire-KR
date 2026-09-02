@@ -1,0 +1,16 @@
+[
+xmin -2170
+ymin 107
+xmax 5760
+ymax 1279
+translatex -2446
+][
+font 115
+height 600
+color #000000
+x 1829
+y 600
+]보기의 발은 언제나 [
+x 1897
+y 1240
+]물속에 가려져 있음

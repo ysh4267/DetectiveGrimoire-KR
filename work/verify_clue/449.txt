@@ -1,0 +1,16 @@
+[
+xmin -1680
+ymin 107
+xmax 5262
+ymax 1280
+translatex -2446
+][
+font 115
+height 600
+color #000000
+x 2721
+y 600
+]이상한 액체 [
+x 2169
+y 1240
+]점액이 묻어 있음

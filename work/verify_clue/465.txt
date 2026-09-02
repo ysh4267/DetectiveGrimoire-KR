@@ -1,0 +1,16 @@
+[
+xmin -1788
+ymin 107
+xmax 5267
+ymax 1423
+translatex -2446
+][
+font 115
+height 600
+color #000000
+x 877
+y 600
+]붉은 안감은 어떤 커튼에서 [
+x 1909
+y 1240
+]찢어낸 조각이었음

@@ -1,0 +1,16 @@
+[
+xmin -2263
+ymin 128
+xmax 5772
+ymax 1427
+translatex -2446
+][
+font 115
+height 600
+color #000000
+x 2340
+y 600
+]직접 만든 보기 [
+x 2132
+y 1240
+]분장의 머리 부분

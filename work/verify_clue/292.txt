@@ -1,0 +1,15 @@
+[
+xmin -477
+ymin 137
+xmax 3865
+ymax 1125
+translatex -488
+][
+font 115
+height 560
+color #000000
+y 560
+]소리를 누르면 [
+x 60
+y 1100
+]재생됩니다

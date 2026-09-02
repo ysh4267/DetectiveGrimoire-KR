@@ -1,0 +1,12 @@
+[
+xmin -896
+ymin 128
+xmax 2745
+ymax 635
+translatex -914
+][
+font 115
+height 600
+color #000000
+y 600
+]머리 부분

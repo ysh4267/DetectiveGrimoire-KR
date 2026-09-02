@@ -1,0 +1,16 @@
+[
+xmin -2374
+ymin 133
+xmax 5970
+ymax 1420
+translatex -2446
+][
+font 115
+height 600
+color #000000
+x 1832
+y 600
+]카페 옆 쓰레기통에 [
+x 2520
+y 1240
+]버려져 있었음

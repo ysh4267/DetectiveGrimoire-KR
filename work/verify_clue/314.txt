@@ -1,0 +1,16 @@
+[
+xmin -1674
+ymin 128
+xmax 5253
+ymax 1427
+translatex -2446
+][
+font 115
+height 600
+color #000000
+x 2021
+y 600
+]60년 전 탐험가가 [
+x 1615
+y 1240
+]웨이브리지에게 준 것

@@ -1,0 +1,12 @@
+[
+xmin -192
+ymin 107
+xmax 1520
+ymax 446
+translatex -212
+][
+font 265
+height 600
+color #e4e470
+y 420
+]외침

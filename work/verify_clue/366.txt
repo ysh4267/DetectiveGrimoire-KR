@@ -1,0 +1,16 @@
+[
+xmin -1620
+ymin 128
+xmax 5181
+ymax 1423
+translatex -2446
+][
+font 115
+height 600
+color #000000
+x 2710
+y 600
+]분장은 다섯 [
+x 1853
+y 1240
+]부분으로 이루어짐:

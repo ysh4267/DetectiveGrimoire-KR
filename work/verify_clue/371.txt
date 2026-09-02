@@ -1,0 +1,12 @@
+[
+xmin -877
+ymin 128
+xmax 1517
+ymax 634
+translatex -914
+][
+font 115
+height 600
+color #000000
+y 600
+]오리발

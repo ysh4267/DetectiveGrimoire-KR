@@ -1,0 +1,12 @@
+[
+xmin -896
+ymin 127
+xmax 2739
+ymax 635
+translatex -914
+][
+font 115
+height 600
+color #000000
+y 600
+]몸통 부분

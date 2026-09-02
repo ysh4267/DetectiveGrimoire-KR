@@ -28,10 +28,15 @@ $r = New-Object Clk+RECT
 [void][Clk]::GetWindowRect($p.MainWindowHandle, [ref]$r)
 
 for ($i = 0; $i -lt $Times; $i++) {
-  [void][Clk]::SetCursorPos($r.L + $X, $r.T + $Y)
-  Start-Sleep -Milliseconds 120
+  # Stage3D input needs real movement to update hover state before a press,
+  # so walk the cursor in instead of teleporting it
+  foreach ($step in 24, 16, 10, 6, 3, 0) {
+    [void][Clk]::SetCursorPos($r.L + $X - $step, $r.T + $Y - $step)
+    Start-Sleep -Milliseconds 40
+  }
+  Start-Sleep -Milliseconds 250
   [Clk]::mouse_event([Clk]::DOWN, 0, 0, 0, [IntPtr]::Zero)
-  Start-Sleep -Milliseconds 60
+  Start-Sleep -Milliseconds 140
   [Clk]::mouse_event([Clk]::UP, 0, 0, 0, [IntPtr]::Zero)
   Start-Sleep -Milliseconds $DelayMs
 }

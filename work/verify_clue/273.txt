@@ -1,0 +1,12 @@
+[
+xmin 88
+ymin 114
+xmax 1380
+ymax 474
+translatex 71
+][
+font 265
+height 640
+color #e4e470
+y 440
+]쾅

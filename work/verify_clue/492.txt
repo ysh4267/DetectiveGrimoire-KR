@@ -1,0 +1,16 @@
+[
+xmin -2151
+ymin 128
+xmax 5737
+ymax 1423
+translatex -2446
+][
+font 115
+height 600
+color #000000
+x 2723
+y 600
+]이상한 액체 [
+x 2239
+y 1240
+]점액처럼 생겼음

@@ -1,0 +1,16 @@
+[
+xmin -1679
+ymin 127
+xmax 5134
+ymax 1427
+translatex -2446
+][
+font 115
+height 600
+color #000000
+x 2037
+y 600
+]폴더 요원이 모은 [
+x 2008
+y 1240
+]보기에 대한 정보:

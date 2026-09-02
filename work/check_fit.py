@@ -69,31 +69,41 @@ def check(swfkey, translations, tolerance=1.15):
         if box <= 0:
             continue
 
-        nrec = len(parsed['records'])
+        # mirror the build exactly: wrap to visual lines, hand each to the
+        # first record on it, then apply the same auto-shrink
+        recs = parsed['records']
+        groups = patch_swf.record_lines(parsed)
         ko = translations[cid]
-        lines = patch_swf.wrap_lines(ko, nrec) if isinstance(ko, str) else ko
+        text = ko if isinstance(ko, str) else ' '.join(ko)
+        per_line = patch_swf.wrap_lines(text, len(groups))
+        lines = [''] * len(recs)
+        for gi, g in enumerate(groups):
+            lines[g[0]] = per_line[gi]
+        scale = patch_swf.fit_scale(parsed, lines)
 
-        height = None
-        for i, rec in enumerate(parsed['records']):
-            h = ffdectext.get_param(rec['params'], 'height')
-            if h:
-                height = int(h)
-            if height is None or i >= len(lines):
+        heights, h = [], None
+        for rec in recs:
+            v = ffdectext.get_param(rec['params'], 'height')
+            if v:
+                h = int(v)
+            heights.append(h)
+
+        for gi, g in enumerate(groups):
+            if heights[g[0]] is None:
                 continue
-            en = rec['text']
-            w_ko = advance(lines[i], height)
-            w_en = advance(en, height)
+            w_ko = sum(advance(lines[i], heights[i] * scale) for i in g)
+            w_en = sum(advance(recs[i]['text'], heights[i]) for i in g)
             if w_en <= 0:
                 continue
-            grow = w_ko / w_en
-            if grow > tolerance and w_ko > box * 1.35:
+            if w_ko > box * 1.05:
                 out.append({
-                    'swf': swfkey, 'id': cid, 'line': i,
+                    'swf': swfkey, 'id': cid, 'line': gi,
                     'box': box, 'width': round(w_ko),
-                    'grow': round(grow, 2),
+                    'grow': round(w_ko / w_en, 2),
                     'vs_box': round(w_ko / box, 2),
-                    'ko': lines[i],
-                    'en': en,
+                    'scale': round(scale, 2),
+                    'ko': per_line[gi],
+                    'en': ''.join(recs[i]['text'] for i in g),
                 })
     return out
 

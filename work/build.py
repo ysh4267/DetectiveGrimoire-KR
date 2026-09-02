@@ -91,7 +91,11 @@ def main():
         done += 1
 
     if not args.skip_main and abc_ko:
-        src = os.path.join(GAME, 'DetectiveGrimoireDesktopSteam.swf')
+        # always source from the pristine backup -- the live file may already
+        # be a patched build, and Korean keys would then match nothing
+        src = os.path.join(ROOT, 'backup', 'DetectiveGrimoireDesktopSteam.swf')
+        if not os.path.exists(src):
+            src = os.path.join(GAME, 'DetectiveGrimoireDesktopSteam.swf')
         dst = os.path.join(DIST, 'DetectiveGrimoireDesktopSteam.swf')
         hit, before, after = abcpatch.patch_swf_strings(src, dst, abc_ko)
         print('main SWF: replaced %d/%d ABC strings  (%d -> %d bytes)'

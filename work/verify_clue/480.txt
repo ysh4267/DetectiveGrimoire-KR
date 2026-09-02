@@ -1,0 +1,13 @@
+[
+xmin -1373
+ymin 107
+xmax 4972
+ymax 776
+translatex -2446
+][
+font 115
+height 600
+color #000000
+x 1040
+y 600
+]발톱이 하나도 없음

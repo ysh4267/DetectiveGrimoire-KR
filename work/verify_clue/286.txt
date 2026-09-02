@@ -1,0 +1,12 @@
+[
+xmin -332
+ymin 110
+xmax 864
+ymax 446
+translatex -340
+][
+font 265
+height 600
+color #e4e470
+y 420
+]쿵

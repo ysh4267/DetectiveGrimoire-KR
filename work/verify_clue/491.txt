@@ -1,0 +1,16 @@
+[
+xmin -2402
+ymin 107
+xmax 5895
+ymax 1427
+translatex -2446
+][
+font 115
+height 600
+color #000000
+x 1780
+y 600
+]보기의 늪 카페에서 [
+x 2400
+y 1240
+]파는 인기 음료

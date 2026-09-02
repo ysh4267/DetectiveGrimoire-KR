@@ -1,0 +1,13 @@
+[
+xmin -523
+ymin 106
+xmax 896
+ymax 446
+translatex -605
+][
+font 265
+height 514
+color #e4e470
+x 60
+y 420
+]쨍그랑

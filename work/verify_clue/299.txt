@@ -1,0 +1,15 @@
+[
+xmin -2411
+ymin 107
+xmax 5985
+ymax 1280
+translatex -2446
+][
+font 115
+height 600
+color #000000
+y 600
+]그림 속 보기는 양팔에 작은 [
+x 1820
+y 1240
+]발톱이 세 개씩 달려 있음

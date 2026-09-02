@@ -1,0 +1,14 @@
+[
+xmin 953
+ymin 134
+xmax 2612
+ymax 628
+translatex -2446
+][
+font 115
+height 538
+letterspacing -17
+color #000000
+x 3380
+y 600
+]??????

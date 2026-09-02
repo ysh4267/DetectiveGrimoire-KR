@@ -1,0 +1,16 @@
+[
+xmin -2307
+ymin 133
+xmax 5899
+ymax 1427
+translatex -2446
+][
+font 115
+height 600
+color #000000
+x 2106
+y 600
+]레밍턴 사무실 밖 [
+x 1346
+y 1240
+]갈대밭에 숨겨져 있었음

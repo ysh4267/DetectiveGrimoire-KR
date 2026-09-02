@@ -1,0 +1,13 @@
+[
+xmin -2008
+ymin 107
+xmax 5604
+ymax 779
+translatex -2446
+][
+font 115
+height 600
+color #000000
+x 400
+y 600
+]눈에 띄는 붉은 소용돌이 무늬

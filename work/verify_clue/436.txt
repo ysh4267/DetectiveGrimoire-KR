@@ -1,0 +1,16 @@
+[
+xmin -2233
+ymin 128
+xmax 5746
+ymax 1427
+translatex -2446
+][
+font 115
+height 600
+color #000000
+x 1446
+y 600
+]보기 분장의 머리 부분 [
+x 1790
+y 1240
+]안에 채워져 있던 천

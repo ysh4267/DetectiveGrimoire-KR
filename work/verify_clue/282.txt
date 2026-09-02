@@ -1,0 +1,12 @@
+[
+xmin -609
+ymin 115
+xmax 1140
+ymax 474
+translatex -629
+][
+font 265
+height 634
+color #e4e470
+y 440
+]찢어짐

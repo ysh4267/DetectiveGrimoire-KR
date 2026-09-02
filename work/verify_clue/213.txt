@@ -1,0 +1,16 @@
+[
+xmin -2106
+ymin 132
+xmax 5600
+ymax 1427
+translatex -2446
+][
+font 115
+height 600
+color #000000
+x 2333
+y 600
+]사진 속 존재는 [
+x 2125
+y 1240
+]다리가 길어 보임

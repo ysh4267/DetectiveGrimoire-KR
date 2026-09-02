@@ -1,0 +1,13 @@
+[
+xmin -2195
+ymin 107
+xmax 5697
+ymax 783
+translatex -2446
+][
+font 115
+height 600
+color #000000
+x 240
+y 600
+]샐리의 검은 레깅스 한 벌

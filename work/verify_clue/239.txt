@@ -1,0 +1,12 @@
+[
+xmin -190
+ymin 62
+xmax 3840
+ymax 424
+translatex -209
+][
+font 238
+height 440
+color #ffffff
+y 400
+]978-0-141-32720-4

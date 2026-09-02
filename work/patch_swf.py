@@ -16,7 +16,12 @@ import swffonts
 
 ROOT = os.path.dirname(HERE)
 GAME = r'e:/Program Files/SteamLibrary/steamapps/common/Detective Grimoire'
-SWFDIR = os.path.join(GAME, 'assets', 'swf-dsk')
+
+# Patch the pristine originals, never the live game files -- once a build has
+# been installed those are already Korean, and re-patching them compounds the
+# font swap and the auto-shrink.
+_BACKUP = os.path.join(ROOT, 'backup', 'swf-dsk-original')
+SWFDIR = _BACKUP if os.path.isdir(_BACKUP) else os.path.join(GAME, 'assets', 'swf-dsk')
 RAW = os.path.join(ROOT, 'work', 'text_raw')
 BASE_FONT = os.path.join(ROOT, 'work', 'fonts', 'base_kr.ttf')
 FFDEC = ['java', '-Xmx3g', '-jar', os.path.join(ROOT, 'tools', 'ffdec', 'ffdec.jar')]

@@ -1,0 +1,16 @@
+[
+xmin -2325
+ymin 110
+xmax 5831
+ymax 1423
+translatex -2446
+][
+font 115
+height 600
+color #000000
+x 1855
+y 600
+]웨이브리지의 압화 [
+x 2063
+y 1240
+]책에서 나온 한 장

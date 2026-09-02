@@ -1,0 +1,16 @@
+[
+xmin -1933
+ymin 107
+xmax 5426
+ymax 1427
+translatex -2446
+][
+font 115
+height 600
+color #000000
+x 1780
+y 600
+]보기의 늪 카페에서 [
+x 1848
+y 1240
+]파는 핫도그의 일종

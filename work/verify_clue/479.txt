@@ -1,0 +1,16 @@
+[
+xmin -1588
+ymin 133
+xmax 5167
+ymax 1423
+translatex -2446
+][
+font 115
+height 600
+color #000000
+x 2167
+y 600
+]박물관의 조각상 [
+x 1615
+y 1240
+]사이에 숨겨져 있었음
