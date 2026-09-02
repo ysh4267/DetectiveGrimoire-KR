@@ -1,0 +1,309 @@
+[
+ {
+  "file": "centralboxes__CentralBoxesAll_p1.json",
+  "group": "centralboxes__CentralBoxesAll",
+  "swfs": [
+   "centralboxes__CentralBoxesAll"
+  ],
+  "n": 247,
+  "chars": 11987
+ },
+ {
+  "file": "talk__echo.json",
+  "group": "talk__echo",
+  "swfs": [
+   "talk__echo"
+  ],
+  "n": 210,
+  "chars": 8600
+ },
+ {
+  "file": "talk__grimoire.json",
+  "group": "talk__grimoire",
+  "swfs": [
+   "talk__grimoire"
+  ],
+  "n": 230,
+  "chars": 8489
+ },
+ {
+  "file": "talk__folder.json",
+  "group": "talk__folder",
+  "swfs": [
+   "talk__folder"
+  ],
+  "n": 199,
+  "chars": 8430
+ },
+ {
+  "file": "talk__weybridge.json",
+  "group": "talk__weybridge",
+  "swfs": [
+   "talk__weybridge"
+  ],
+  "n": 186,
+  "chars": 7358
+ },
+ {
+  "file": "talk__vanDePeer.json",
+  "group": "talk__vanDePeer",
+  "swfs": [
+   "talk__vanDePeer"
+  ],
+  "n": 168,
+  "chars": 7340
+ },
+ {
+  "file": "talk__sally.json",
+  "group": "talk__sally",
+  "swfs": [
+   "talk__sally"
+  ],
+  "n": 197,
+  "chars": 7262
+ },
+ {
+  "file": "menus__ClueGraphic.json",
+  "group": "menus__ClueGraphic",
+  "swfs": [
+   "menus__ClueGraphic"
+  ],
+  "n": 131,
+  "chars": 7207
+ },
+ {
+  "file": "talk__harper.json",
+  "group": "talk__harper",
+  "swfs": [
+   "talk__harper"
+  ],
+  "n": 189,
+  "chars": 7114
+ },
+ {
+  "file": "talk__burle.json",
+  "group": "talk__burle",
+  "swfs": [
+   "talk__burle"
+  ],
+  "n": 149,
+  "chars": 5971
+ },
+ {
+  "file": "menus__ProfileGraphic.json",
+  "group": "menus__ProfileGraphic",
+  "swfs": [
+   "menus__ProfileGraphic"
+  ],
+  "n": 110,
+  "chars": 4958
+ },
+ {
+  "file": "centralboxes__CentralBoxesAll_p2.json",
+  "group": "centralboxes__CentralBoxesAll",
+  "swfs": [
+   "centralboxes__CentralBoxesAll"
+  ],
+  "n": 101,
+  "chars": 4147
+ },
+ {
+  "file": "minds__MindsGraphic.json",
+  "group": "minds__MindsGraphic",
+  "swfs": [
+   "minds__MindsGraphic"
+  ],
+  "n": 114,
+  "chars": 4023
+ },
+ {
+  "file": "talk__james.json",
+  "group": "talk__james",
+  "swfs": [
+   "talk__james"
+  ],
+  "n": 84,
+  "chars": 3465
+ },
+ {
+  "file": "menus__AreaNotesGraphic.json",
+  "group": "menus__AreaNotesGraphic",
+  "swfs": [
+   "menus__AreaNotesGraphic"
+  ],
+  "n": 51,
+  "chars": 3463
+ },
+ {
+  "file": "talk__littleGirl.json",
+  "group": "talk__littleGirl",
+  "swfs": [
+   "talk__littleGirl"
+  ],
+  "n": 86,
+  "chars": 3200
+ },
+ {
+  "file": "menus__TitleScreenGraphic.json",
+  "group": "menus__TitleScreenGraphic",
+  "swfs": [
+   "menus__TitleScreenGraphic"
+  ],
+  "n": 95,
+  "chars": 1645
+ },
+ {
+  "file": "menus__MainMenuGraphic.json",
+  "group": "menus__MainMenuGraphic",
+  "swfs": [
+   "menus__MainMenuGraphic"
+  ],
+  "n": 22,
+  "chars": 1404
+ },
+ {
+  "file": "minigames__ChemMinigameGraphic.json",
+  "group": "minigames__ChemMinigameGraphic",
+  "swfs": [
+   "minigames__ChemMinigameGraphic"
+  ],
+  "n": 36,
+  "chars": 750
+ },
+ {
+  "file": "minigames__BinMinigameGraphic.json",
+  "group": "minigames__BinMinigameGraphic",
+  "swfs": [
+   "minigames__BinMinigameGraphic",
+   "minigames__CogsMinigameGraphic"
+  ],
+  "n": 29,
+  "chars": 639
+ },
+ {
+  "file": "minigames__CostumeMinigameGraphic.json",
+  "group": "minigames__CostumeMinigameGraphic",
+  "swfs": [
+   "minigames__CostumeMinigameGraphic",
+   "minigames__DoorMinigameGraphic",
+   "minigames__FootprintMinigameGraphic",
+   "minigames__GateMinigameGraphic",
+   "minigames__HandsMinigameGraphic",
+   "minigames__KeyMinigameGraphic",
+   "minigames__LockpickMinigameGraphic",
+   "minigames__PadlockMinigameGraphic",
+   "minigames__PhotoMinigameGraphic",
+   "minigames__ReedsMinigameGraphic"
+  ],
+  "n": 29,
+  "chars": 639
+ },
+ {
+  "file": "minigames__SoundMinigameGraphic.json",
+  "group": "minigames__SoundMinigameGraphic",
+  "swfs": [
+   "minigames__SoundMinigameGraphic"
+  ],
+  "n": 29,
+  "chars": 639
+ },
+ {
+  "file": "talk__TalkingTreeGraphic.json",
+  "group": "talk__TalkingTreeGraphic",
+  "swfs": [
+   "talk__TalkingTreeGraphic"
+  ],
+  "n": 14,
+  "chars": 474
+ },
+ {
+  "file": "menus__MapGraphic.json",
+  "group": "menus__MapGraphic",
+  "swfs": [
+   "menus__MapGraphic"
+  ],
+  "n": 8,
+  "chars": 382
+ },
+ {
+  "file": "menus__OptionsGraphic.json",
+  "group": "menus__OptionsGraphic",
+  "swfs": [
+   "menus__OptionsGraphic"
+  ],
+  "n": 12,
+  "chars": 322
+ },
+ {
+  "file": "chalgames__vanDePeer.json",
+  "group": "chalgames__vanDePeer",
+  "swfs": [
+   "chalgames__vanDePeer"
+  ],
+  "n": 2,
+  "chars": 94
+ },
+ {
+  "file": "chalgames__harper.json",
+  "group": "chalgames__harper",
+  "swfs": [
+   "chalgames__harper"
+  ],
+  "n": 2,
+  "chars": 93
+ },
+ {
+  "file": "chalgames__echo.json",
+  "group": "chalgames__echo",
+  "swfs": [
+   "chalgames__echo"
+  ],
+  "n": 3,
+  "chars": 90
+ },
+ {
+  "file": "chalgames__sally.json",
+  "group": "chalgames__sally",
+  "swfs": [
+   "chalgames__sally"
+  ],
+  "n": 2,
+  "chars": 61
+ },
+ {
+  "file": "menus__HeadphonesGraphic.json",
+  "group": "menus__HeadphonesGraphic",
+  "swfs": [
+   "menus__HeadphonesGraphic"
+  ],
+  "n": 2,
+  "chars": 53
+ },
+ {
+  "file": "chalgames__burle.json",
+  "group": "chalgames__burle",
+  "swfs": [
+   "chalgames__burle"
+  ],
+  "n": 1,
+  "chars": 52
+ },
+ {
+  "file": "chalgames__weybridge.json",
+  "group": "chalgames__weybridge",
+  "swfs": [
+   "chalgames__weybridge"
+  ],
+  "n": 1,
+  "chars": 52
+ },
+ {
+  "file": "menus__DialogueBoxGraphic.json",
+  "group": "menus__DialogueBoxGraphic",
+  "swfs": [
+   "menus__DialogueBoxGraphic"
+  ],
+  "n": 6,
+  "chars": 14
+ }
+]

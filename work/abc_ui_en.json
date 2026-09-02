@@ -1,0 +1,933 @@
+[
+ {
+  "en": "Are you sure you want to DELETE save slot ",
+  "indices": [
+   1486
+  ],
+  "where": [
+   "screens/title/TitleScreen.as:DialogueBox",
+   "manual"
+  ]
+ },
+ {
+  "en": "Are you sure you want to QUIT the game?<font size='4'><br/><br/></font><font size='30' color='#555555'>This game autosaves, it is<br/>safe to quit anytime.</font>",
+  "indices": [
+   261
+  ],
+  "where": [
+   "DGGameDsk.as:DialogueBox",
+   "manual"
+  ]
+ },
+ {
+  "en": "Are you sure you want to QUIT to the title menu?<font size='4'><br/><br/></font><font size='30' color='#555555'>This game autosaves, it is<br/>safe to quit anytime.</font>",
+  "indices": [
+   3054
+  ],
+  "where": [
+   "com/sfbgames/grimoire/screens/options/OptionsScreen.as:DialogueBox",
+   "manual"
+  ]
+ },
+ {
+  "en": "Burle",
+  "indices": [
+   3479
+  ],
+  "where": [
+   "ChallengeBurleMind.name"
+  ]
+ },
+ {
+  "en": "Chapter 1 To 2",
+  "indices": [
+   3835
+  ],
+  "where": [
+   "Chapter1To2Mind.name"
+  ]
+ },
+ {
+  "en": "Chapter 2 To 3",
+  "indices": [
+   3736
+  ],
+  "where": [
+   "Chapter2To3Mind.name"
+  ]
+ },
+ {
+  "en": "Echo",
+  "indices": [
+   2875
+  ],
+  "where": [
+   "ChallengeEchoMind.name"
+  ]
+ },
+ {
+  "en": "Ending",
+  "indices": [
+   3219
+  ],
+  "where": [
+   "EndingMind.name"
+  ]
+ },
+ {
+  "en": "Folder",
+  "indices": [
+   2801
+  ],
+  "where": [
+   "ChallengeFolderMind.name"
+  ]
+ },
+ {
+  "en": "Harper",
+  "indices": [
+   3519
+  ],
+  "where": [
+   "ChallengeHarperMind.name"
+  ]
+ },
+ {
+  "en": "I brought with me, disproves what",
+  "indices": [
+   3850
+  ],
+  "where": [
+   "Chapter1To2Mind.joiner1Text"
+  ]
+ },
+ {
+  "en": "I found in my office explains what",
+  "indices": [
+   3848
+  ],
+  "where": [
+   "Chapter1To2Mind.joiner1Text"
+  ]
+ },
+ {
+  "en": "I found in the trash can explains what",
+  "indices": [
+   3847
+  ],
+  "where": [
+   "Chapter1To2Mind.joiner1Text"
+  ]
+ },
+ {
+  "en": "I found inside",
+  "indices": [
+   2817
+  ],
+  "where": [
+   "ChallengeFolderMind.joiner1Text"
+  ]
+ },
+ {
+  "en": "I found near",
+  "indices": [
+   2816
+  ],
+  "where": [
+   "ChallengeFolderMind.joiner1Text"
+  ]
+ },
+ {
+  "en": "I lost near",
+  "indices": [
+   2819
+  ],
+  "where": [
+   "ChallengeFolderMind.joiner1Text"
+  ]
+ },
+ {
+  "en": "I was given by",
+  "indices": [
+   2818
+  ],
+  "where": [
+   "ChallengeFolderMind.joiner1Text"
+  ]
+ },
+ {
+  "en": "Intro",
+  "indices": [
+   3120
+  ],
+  "where": [
+   "IntroMind.name"
+  ]
+ },
+ {
+  "en": "Sally Spears",
+  "indices": [
+   3876
+  ],
+  "where": [
+   "ChallengeSallyMind.name"
+  ]
+ },
+ {
+  "en": "Van De Peer",
+  "indices": [
+   3249
+  ],
+  "where": [
+   "ChallengeVanDePeerMind.name"
+  ]
+ },
+ {
+  "en": "Weybridge",
+  "indices": [
+   2909
+  ],
+  "where": [
+   "ChallengeWeybridgeMind.name"
+  ]
+ },
+ {
+  "en": "You can click and HOLD the back button to exit immediately from menus",
+  "indices": [
+   1610
+  ],
+  "where": [
+   "com/sfbgames/grimoire/screens/area/AreaScreen.as:DialogueBox",
+   "manual"
+  ]
+ },
+ {
+  "en": "and less time in his tent",
+  "indices": [
+   2898
+  ],
+  "where": [
+   "ChallengeEchoMind.joiner2Text"
+  ]
+ },
+ {
+  "en": "and more time in his tent",
+  "indices": [
+   2897
+  ],
+  "where": [
+   "ChallengeEchoMind.joiner2Text"
+  ]
+ },
+ {
+  "en": "and plans to eat it",
+  "indices": [
+   2899
+  ],
+  "where": [
+   "ChallengeEchoMind.joiner2Text"
+  ]
+ },
+ {
+  "en": "are covered in green powder",
+  "indices": [
+   3899
+  ],
+  "where": [
+   "ChallengeSallyMind.joiner2Text"
+  ]
+ },
+ {
+  "en": "are covered in the same \"swamp slime\"",
+  "indices": [
+   3896
+  ],
+  "where": [
+   "ChallengeSallyMind.joiner2Text"
+  ]
+ },
+ {
+  "en": "are the only reason that",
+  "indices": [
+   3891
+  ],
+  "where": [
+   "ChallengeSallyMind.joiner1Text"
+  ]
+ },
+ {
+  "en": "became a famous cartoon character",
+  "indices": [
+   2934
+  ],
+  "where": [
+   "ChallengeWeybridgeMind.joiner2Text"
+  ]
+ },
+ {
+  "en": "because he's so terrified",
+  "indices": [
+   2900
+  ],
+  "where": [
+   "ChallengeEchoMind.joiner2Text"
+  ]
+ },
+ {
+  "en": "belonged to Boggy",
+  "indices": [
+   3898
+  ],
+  "where": [
+   "ChallengeSallyMind.joiner2Text"
+  ]
+ },
+ {
+  "en": "belonged to a secret society",
+  "indices": [
+   3756
+  ],
+  "where": [
+   "Chapter2To3Mind.joiner2Text"
+  ]
+ },
+ {
+  "en": "built the museum because",
+  "indices": [
+   2926
+  ],
+  "where": [
+   "ChallengeWeybridgeMind.joiner1Text"
+  ]
+ },
+ {
+  "en": "came to the swamp in the first place",
+  "indices": [
+   3503
+  ],
+  "where": [
+   "ChallengeBurleMind.joiner2Text"
+  ]
+ },
+ {
+  "en": "can't be proof that",
+  "indices": [
+   3233
+  ],
+  "where": [
+   "EndingMind.joiner1Text"
+  ]
+ },
+ {
+  "en": "disproves that",
+  "indices": [
+   3749
+  ],
+  "where": [
+   "Chapter2To3Mind.joiner1Text"
+  ]
+ },
+ {
+  "en": "doesn't explain why",
+  "indices": [
+   3495
+  ],
+  "where": [
+   "ChallengeBurleMind.joiner1Text"
+  ]
+ },
+ {
+  "en": "ever existed",
+  "indices": [
+   3857
+  ],
+  "where": [
+   "Chapter1To2Mind.joiner2Text"
+  ]
+ },
+ {
+  "en": "explains why",
+  "indices": [
+   3750
+  ],
+  "where": [
+   "Chapter2To3Mind.joiner1Text"
+  ]
+ },
+ {
+  "en": "forced",
+  "indices": [
+   3265
+  ],
+  "where": [
+   "ChallengeVanDePeerMind.joiner1Text"
+  ]
+ },
+ {
+  "en": "forgot to tell me that",
+  "indices": [
+   3234
+  ],
+  "where": [
+   "EndingMind.joiner1Text"
+  ]
+ },
+ {
+  "en": "found at the crime-scene and",
+  "indices": [
+   3888
+  ],
+  "where": [
+   "ChallengeSallyMind.joiner1Text"
+  ]
+ },
+ {
+  "en": "found in the treehouse and",
+  "indices": [
+   3889
+  ],
+  "where": [
+   "ChallengeSallyMind.joiner1Text"
+  ]
+ },
+ {
+  "en": "founded Boggy's Bog when",
+  "indices": [
+   2924
+  ],
+  "where": [
+   "ChallengeWeybridgeMind.joiner1Text"
+  ]
+ },
+ {
+  "en": "has always had permission from",
+  "indices": [
+   3264
+  ],
+  "where": [
+   "ChallengeVanDePeerMind.joiner1Text"
+  ]
+ },
+ {
+  "en": "has been there for years",
+  "indices": [
+   2826
+  ],
+  "where": [
+   "ChallengeFolderMind.joiner2Text"
+  ]
+ },
+ {
+  "en": "has never spoken to",
+  "indices": [
+   2891
+  ],
+  "where": [
+   "ChallengeEchoMind.joiner1Text"
+  ]
+ },
+ {
+  "en": "has recently acquired",
+  "indices": [
+   2892
+  ],
+  "where": [
+   "ChallengeEchoMind.joiner1Text"
+  ]
+ },
+ {
+  "en": "have magic powers",
+  "indices": [
+   3897
+  ],
+  "where": [
+   "ChallengeSallyMind.joiner2Text"
+  ]
+ },
+ {
+  "en": "is far too remote for",
+  "indices": [
+   3132
+  ],
+  "where": [
+   "IntroMind.joiner1Text"
+  ]
+ },
+ {
+  "en": "is historical evidence that",
+  "indices": [
+   3748
+  ],
+  "where": [
+   "Chapter2To3Mind.joiner1Text"
+  ]
+ },
+ {
+  "en": "is proof that",
+  "indices": [
+   3890
+  ],
+  "where": [
+   "ChallengeSallyMind.joiner1Text"
+  ]
+ },
+ {
+  "en": "is showing me",
+  "indices": [
+   3855
+  ],
+  "where": [
+   "Chapter1To2Mind.joiner2Text"
+  ]
+ },
+ {
+  "en": "is too stupid for",
+  "indices": [
+   3133
+  ],
+  "where": [
+   "IntroMind.joiner1Text"
+  ]
+ },
+ {
+  "en": "is way too big for",
+  "indices": [
+   3134
+  ],
+  "where": [
+   "IntroMind.joiner1Text"
+  ]
+ },
+ {
+  "en": "isn't warm enough for",
+  "indices": [
+   3135
+  ],
+  "where": [
+   "IntroMind.joiner1Text"
+  ]
+ },
+ {
+  "en": "killed the swamp creature when",
+  "indices": [
+   2925
+  ],
+  "where": [
+   "ChallengeWeybridgeMind.joiner1Text"
+  ]
+ },
+ {
+  "en": "leads me to believe",
+  "indices": [
+   3232
+  ],
+  "where": [
+   "EndingMind.joiner1Text"
+  ]
+ },
+ {
+  "en": "left the Cafe feeling ill after",
+  "indices": [
+   3533
+  ],
+  "where": [
+   "ChallengeHarperMind.joiner1Text"
+  ]
+ },
+ {
+  "en": "lied to me, because",
+  "indices": [
+   3494
+  ],
+  "where": [
+   "ChallengeBurleMind.joiner1Text"
+  ]
+ },
+ {
+  "en": "might belong to Agent Folder",
+  "indices": [
+   2824
+  ],
+  "where": [
+   "ChallengeFolderMind.joiner2Text"
+  ]
+ },
+ {
+  "en": "might belong to Mr Harper",
+  "indices": [
+   2825
+  ],
+  "where": [
+   "ChallengeFolderMind.joiner2Text"
+  ]
+ },
+ {
+  "en": "murdered the victim",
+  "indices": [
+   3758
+  ],
+  "where": [
+   "Chapter2To3Mind.joiner2Text"
+  ]
+ },
+ {
+  "en": "murdered the victim because",
+  "indices": [
+   3535
+  ],
+  "where": [
+   "ChallengeHarperMind.joiner1Text"
+  ]
+ },
+ {
+  "en": "offered to help",
+  "indices": [
+   3266
+  ],
+  "where": [
+   "ChallengeVanDePeerMind.joiner1Text"
+  ]
+ },
+ {
+  "en": "only recently got permission from",
+  "indices": [
+   3263
+  ],
+  "where": [
+   "ChallengeVanDePeerMind.joiner1Text"
+  ]
+ },
+ {
+  "en": "shouldn't be the reason",
+  "indices": [
+   3751
+  ],
+  "where": [
+   "Chapter2To3Mind.joiner1Text"
+  ]
+ },
+ {
+  "en": "smells like",
+  "indices": [
+   3856
+  ],
+  "where": [
+   "Chapter1To2Mind.joiner2Text"
+  ]
+ },
+ {
+  "en": "sold him a Bog-Dog",
+  "indices": [
+   3541
+  ],
+  "where": [
+   "ChallengeHarperMind.joiner2Text"
+  ]
+ },
+ {
+  "en": "sold him some Swamp Juice",
+  "indices": [
+   3542
+  ],
+  "where": [
+   "ChallengeHarperMind.joiner2Text"
+  ]
+ },
+ {
+  "en": "spends less time holding",
+  "indices": [
+   2889
+  ],
+  "where": [
+   "ChallengeEchoMind.joiner1Text"
+  ]
+ },
+ {
+  "en": "spends more time holding",
+  "indices": [
+   2890
+  ],
+  "where": [
+   "ChallengeEchoMind.joiner1Text"
+  ]
+ },
+ {
+  "en": "suddenly burst into flames",
+  "indices": [
+   3544
+  ],
+  "where": [
+   "ChallengeHarperMind.joiner2Text"
+  ]
+ },
+ {
+  "en": "that was hidden inside",
+  "indices": [
+   3849
+  ],
+  "where": [
+   "Chapter1To2Mind.joiner1Text"
+  ]
+ },
+ {
+  "en": "to be so smart",
+  "indices": [
+   3141
+  ],
+  "where": [
+   "IntroMind.joiner2Text"
+  ]
+ },
+ {
+  "en": "to dress up as Boggy",
+  "indices": [
+   3274
+  ],
+  "where": [
+   "ChallengeVanDePeerMind.joiner2Text"
+  ]
+ },
+ {
+  "en": "to film here in the swamp",
+  "indices": [
+   3271
+  ],
+  "where": [
+   "ChallengeVanDePeerMind.joiner2Text"
+  ]
+ },
+ {
+  "en": "to have happened",
+  "indices": [
+   3142
+  ],
+  "where": [
+   "IntroMind.joiner2Text"
+  ]
+ },
+ {
+  "en": "to leave the swamp forever",
+  "indices": [
+   3272
+  ],
+  "where": [
+   "ChallengeVanDePeerMind.joiner2Text"
+  ]
+ },
+ {
+  "en": "to make any money",
+  "indices": [
+   3140
+  ],
+  "where": [
+   "IntroMind.joiner2Text"
+  ]
+ },
+ {
+  "en": "to murder someone",
+  "indices": [
+   3143
+  ],
+  "where": [
+   "IntroMind.joiner2Text"
+  ]
+ },
+ {
+  "en": "to murder the victim",
+  "indices": [
+   3273
+  ],
+  "where": [
+   "ChallengeVanDePeerMind.joiner2Text"
+  ]
+ },
+ {
+  "en": "told me that",
+  "indices": [
+   3493
+  ],
+  "where": [
+   "ChallengeBurleMind.joiner1Text"
+  ]
+ },
+ {
+  "en": "visited the Cafe after",
+  "indices": [
+   3534
+  ],
+  "where": [
+   "ChallengeHarperMind.joiner1Text"
+  ]
+ },
+ {
+  "en": "was Boggy in disguise",
+  "indices": [
+   3241
+  ],
+  "where": [
+   "EndingMind.joiner2Text"
+  ]
+ },
+ {
+  "en": "was a ghost",
+  "indices": [
+   3759
+  ],
+  "where": [
+   "Chapter2To3Mind.joiner2Text"
+  ]
+ },
+ {
+  "en": "was definitely the murder weapon",
+  "indices": [
+   2827
+  ],
+  "where": [
+   "ChallengeFolderMind.joiner2Text"
+  ]
+ },
+ {
+  "en": "was discovered by the explorer 20 years ago",
+  "indices": [
+   2932
+  ],
+  "where": [
+   "ChallengeWeybridgeMind.joiner2Text"
+  ]
+ },
+ {
+  "en": "was discovered by the explorer 60 years ago",
+  "indices": [
+   2931
+  ],
+  "where": [
+   "ChallengeWeybridgeMind.joiner2Text"
+  ]
+ },
+ {
+  "en": "was doing last night",
+  "indices": [
+   3858
+  ],
+  "where": [
+   "Chapter1To2Mind.joiner2Text"
+  ]
+ },
+ {
+  "en": "was eaten by Boggy",
+  "indices": [
+   3242
+  ],
+  "where": [
+   "EndingMind.joiner2Text"
+  ]
+ },
+ {
+  "en": "was fired from their job",
+  "indices": [
+   3543
+  ],
+  "where": [
+   "ChallengeHarperMind.joiner2Text"
+  ]
+ },
+ {
+  "en": "was found at the crime scene",
+  "indices": [
+   3757
+  ],
+  "where": [
+   "Chapter2To3Mind.joiner2Text"
+  ]
+ },
+ {
+  "en": "was framed because",
+  "indices": [
+   3235
+  ],
+  "where": [
+   "EndingMind.joiner1Text"
+  ]
+ },
+ {
+  "en": "was here to hunt Boggy",
+  "indices": [
+   3240
+  ],
+  "where": [
+   "EndingMind.joiner2Text"
+  ]
+ },
+ {
+  "en": "was hunted and killed",
+  "indices": [
+   2933
+  ],
+  "where": [
+   "ChallengeWeybridgeMind.joiner2Text"
+  ]
+ },
+ {
+  "en": "was living in the swamp when",
+  "indices": [
+   2923
+  ],
+  "where": [
+   "ChallengeWeybridgeMind.joiner1Text"
+  ]
+ },
+ {
+  "en": "was nowhere to be found last night",
+  "indices": [
+   3501
+  ],
+  "where": [
+   "ChallengeBurleMind.joiner2Text"
+  ]
+ },
+ {
+  "en": "was one of the reasons",
+  "indices": [
+   3496
+  ],
+  "where": [
+   "ChallengeBurleMind.joiner1Text"
+  ]
+ },
+ {
+  "en": "was so useless",
+  "indices": [
+   3504
+  ],
+  "where": [
+   "ChallengeBurleMind.joiner2Text"
+  ]
+ },
+ {
+  "en": "was stolen by Boggy",
+  "indices": [
+   3243
+  ],
+  "where": [
+   "EndingMind.joiner2Text"
+  ]
+ },
+ {
+  "en": "was the murderer",
+  "indices": [
+   3502
+  ],
+  "where": [
+   "ChallengeBurleMind.joiner2Text"
+  ]
+ },
+ {
+  "en": "was the reason that",
+  "indices": [
+   3536
+  ],
+  "where": [
+   "ChallengeHarperMind.joiner1Text"
+  ]
+ }
+]

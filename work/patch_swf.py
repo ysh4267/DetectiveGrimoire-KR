@@ -12,6 +12,7 @@ import os, sys, json, glob, shutil, subprocess, tempfile
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import ffdectext
+import swffonts
 
 ROOT = os.path.dirname(HERE)
 GAME = r'e:/Program Files/SteamLibrary/steamapps/common/Detective Grimoire'
@@ -86,7 +87,7 @@ def subset_font(chars, out_path):
     return len(set(chars))
 
 
-def patch(key, translations, outdir, verbose=True):
+def patch(key, translations, outdir, verbose=True, extra_chars=''):
     src = swf_path(key)
     tdir = os.path.join(RAW, key, 'texts')
     if not os.path.isdir(tdir):
@@ -97,8 +98,10 @@ def patch(key, translations, outdir, verbose=True):
     imp = os.path.join(tmp, 'texts')
     os.makedirs(imp)
 
-    charset = set(ALWAYS)
-    fonts = set()
+    charset = set(ALWAYS) | set(extra_chars)
+    # every embedded font gets swapped, including ones only a dynamic
+    # DefineEditText references (those never appear in a DefineText record)
+    fonts = set(swffonts.scan(src)[0])
     n_tr = 0
 
     for path in sorted(glob.glob(os.path.join(tdir, '*.txt')),
