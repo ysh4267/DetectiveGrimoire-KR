@@ -1,0 +1,15 @@
+# Tooling / large binaries -- re-downloadable
+tools/
+backup/
+work/extract/
+work/decomp/
+work/fonts/*.ttf
+work/patched/
+work/text_raw/
+work/shots/*.png
+dist/
+
+# Python
+__pycache__/
+*.pyc
+work/test/

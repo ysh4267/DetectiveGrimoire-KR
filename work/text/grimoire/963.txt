@@ -1,0 +1,9 @@
+The 
+--- RECORDSEPARATOR ---
+one thing that
+--- RECORDSEPARATOR ---
+ has eluded me
+--- RECORDSEPARATOR ---
+, 
+--- RECORDSEPARATOR ---
+so far...
