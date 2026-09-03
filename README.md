@@ -32,9 +32,10 @@ ID입니다. 둘 다 화면 텍스트를 담고 있지 않습니다.
    │                              └─ 번역 청크 work/chunks/*.json
    │                                    └─ 번역 결과 work/ko/*.json
    │
-   ├─ 한글 글자 집합 계산 ──►  Noto Sans KR Bold 서브셋 TTF
+   ├─ 한글 글자 집합 계산 ──►  Noto Sans KR Bold 서브셋 TTF  (윤곽 겹침 제거된 것)
    ├─ FFDec -replace <fontId> <ttf>          (임베드 폰트 전량 교체)
-   └─ FFDec -importText                      (한국어 DefineText 주입)
+   ├─ FFDec -importText                      (한국어 DefineText 주입)
+   └─ fixadvances.py                         (글리프 어드밴스 실측값으로 재작성 + 자간)
              │
              └──►  dist/assets/swf-dsk/**/*.swf
 
@@ -67,6 +68,43 @@ ID입니다. 둘 다 화면 텍스트를 담고 있지 않습니다.
 레코드를 둘 수 있습니다** (이름표가 `"OFFICER " + "JAMES"` 로 쪼개져 있음).
 이를 각각 다른 줄로 취급하면 `제임스` 위에 `경관` 이 겹쳐 찍힙니다.
 
+## 글자가 겹치고 획에 선이 보이던 문제
+
+첫 빌드에서 한글이 서로 붙고, 글자 안에 얇은 경계선이 보였습니다. 원인이 둘이었습니다.
+
+### ① 자간 — 폰트에 어드밴스 테이블이 없다
+
+게임의 `DefineFont3` 은 전부 **`FontFlagsHasLayout = 0`** 입니다. 원래 영문 텍스트는
+Flash Pro가 저작 시점에 각 `DefineText` 안에 어드밴스를 직접 박아넣었기 때문에
+폰트에 메트릭이 없어도 됐습니다. 그래서 FFDec가 새 글자를 넣을 때 참고할 값이 없고,
+모르는 글리프에는 **상수를 추정**해 넣습니다.
+
+`ClueGraphic` 실측 (본문 높이 600 twips 기준):
+
+| | 어드밴스 | em 환산 |
+|---|---|---|
+| Noto Sans KR 한글 실제 값 | 552 | 0.920 em |
+| FFDec가 넣은 값 | 467 | 0.778 em |
+| 글리프 잉크 폭 | 518 | 0.864 em |
+
+어드밴스가 잉크 폭보다 **51 twips 좁아서**, 옆 글자와 물리적으로 겹치고 있었습니다.
+
+`fixadvances.py` 가 `-importText` 뒤에 붙어서, `DefineFont3` 의 CodeTable로
+글리프 인덱스 → 문자를 되짚고 폰트의 실제 어드밴스로 전부 다시 씁니다.
+`TextBounds` 도 같이 넓힙니다. `patch_swf.TRACKING` (기본 `0.045` em) 이 여기에 더해집니다.
+
+> `DefineText` 비트 패킹은 원본 617개 태그를 파싱 → 재작성 → 재파싱해 **전부 바이트 일치**함을 확인했습니다.
+
+### ② 획 안의 선 — 겹친 윤곽선
+
+가변폰트를 `instantiateVariableFont` 로 정적화하면 **윤곽선이 겹친 채** 남습니다.
+한글 한 글자가 자소별 윤곽 4~8개로 이뤄지고 서로 교차합니다. 일반 렌더러는
+non-zero winding으로 처리해 티가 안 나지만, SWF는 각 edge에 좌/우 fill을 명시하는
+방식이라 **교차 지점이 전부 얇은 선으로 드러납니다.**
+
+`mkfont.py` 에서 `skia-pathops` 기반 `removeOverlaps` 로 미리 합칩니다
+(예: `관` 윤곽 8개 → 4개, `명` 7개 → 5개).
+
 ## ABC 문자열의 함정
 
 메인 SWF의 상수 풀 문자열은 **인덱스로만** 참조되므로, 하나를 바꾸면 그 문자열의
@@ -91,7 +129,7 @@ ID입니다. 둘 다 화면 텍스트를 담고 있지 않습니다.
 
 ```bash
 # 0) 사전 준비 (한 번만)
-python -m pip install fonttools brotli
+python -m pip install fonttools brotli skia-pathops
 #    tools/ffdec/ 에 JPEXS FFDec 26.2.1 배치
 python work/mkfont.py                # Noto Sans KR Bold 정적 폰트 생성
 

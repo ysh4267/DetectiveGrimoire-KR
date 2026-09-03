@@ -13,6 +13,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import ffdectext
 import swffonts
+import fixadvances
 
 ROOT = os.path.dirname(HERE)
 GAME = r'e:/Program Files/SteamLibrary/steamapps/common/Detective Grimoire'
@@ -118,14 +119,23 @@ def _metrics():
     return _fontmetrics
 
 
+# Uniform letter spacing, in em. The game's own fonts ship no
+# FontAdvanceTable, so FFDec has no metrics to import text against and falls
+# back to a constant -- it gave every Hangul syllable 0.778 em where Noto Sans
+# KR specifies 0.920 em, i.e. 0.05 em narrower than the glyph's own ink, so
+# neighbouring syllables physically overlapped. fixadvances.py rewrites the
+# advances from the font; this adds a little air on top.
+TRACKING = 0.045
+
+
 def text_width(text, height_twips):
     m = _metrics()
     cmap, hmtx, upem = m['cmap'], m['hmtx'], m['upem']
-    total = 0
+    total = 0.0
     for ch in text:
         g = cmap.get(ord(ch))
-        total += hmtx[g][0] if g else upem // 2
-    return total * height_twips / upem
+        total += (hmtx[g][0] if g else upem // 2) / upem + TRACKING
+    return total * height_twips
 
 
 MIN_SCALE = 0.72
@@ -345,14 +355,20 @@ def patch(key, translations, outdir, verbose=True, extra_chars=''):
         raise SystemExit('font replace failed for %s\n%s\n%s' % (key, r.stdout, r.stderr))
 
     # 2) import the translated texts
-    out = os.path.join(outdir, os.path.basename(src))
-    r = subprocess.run(FFDEC + ['-importText', stage1, out, tmp],
+    stage2 = os.path.join(tmp, 'stage2.swf')
+    r = subprocess.run(FFDEC + ['-importText', stage1, stage2, tmp],
                        capture_output=True, text=True, timeout=1800)
     sev = [l for l in (r.stdout + r.stderr).splitlines() if 'SEVERE' in l or 'does not contain' in l]
 
+    # 3) rewrite the glyph advances from the font's real metrics -- FFDec had
+    #    none to work from, so it guessed and the guess was tighter than the
+    #    glyphs themselves
+    out = os.path.join(outdir, os.path.basename(src))
+    n_texts, n_adv = fixadvances.fix(stage2, out, BASE_FONT, TRACKING)
+
     if verbose:
-        print('%-40s fonts=%-14s chars=%-5d translated=%-4d scaled=%-4d missing=%d'
-              % (key, sorted(fonts), n_chars, n_tr, n_scaled, len(sev)))
+        print('%-40s fonts=%-14s chars=%-5d translated=%-4d scaled=%-4d adv=%-6d missing=%d'
+              % (key, sorted(fonts), n_chars, n_tr, n_scaled, n_adv, len(sev)))
         for l in sev[:5]:
             print('    ', l.strip())
     shutil.rmtree(tmp, ignore_errors=True)

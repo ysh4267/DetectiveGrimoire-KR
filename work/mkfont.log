@@ -1,0 +1,9 @@
+axes: {'wght': (100.0, 100.0, 900.0)}
+instantiated at wght=700
+removing contour overlaps (this is the seam fix; takes a minute)...
+saved work/fonts/base_kr.ttf  glyphs=24964  cmap=23174  upem=1000
+hangul U+AC00: yes
+latin A      : yes
+  °ό contours after merge: 4
+  Έν contours after merge: 5
+  ΌÒ contours after merge: 2
