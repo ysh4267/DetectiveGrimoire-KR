@@ -1,9 +1,9 @@
 """Drive GitHub's OAuth device flow and hand the token straight to `gh`.
 
-`gh auth login --web` needs a terminal to press Enter at, which this session
-does not have. The device flow is the same OAuth grant without that prompt:
-ask for a code, the user approves it in a browser, then poll until GitHub
-hands back a token.
+`gh auth login --web` needs a terminal to press Enter at, so it cannot finish
+in a non-interactive shell. The device flow is the same OAuth grant without
+that prompt: ask for a code, the user approves it in a browser, then poll
+until GitHub hands back a token.
 
 The token is piped into `gh auth login --with-token` on stdin and never
 written to disk or printed.
