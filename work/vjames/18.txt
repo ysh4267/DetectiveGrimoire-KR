@@ -1,0 +1,13 @@
+[
+xmin -703
+ymin 167
+xmax 2896
+ymax 777
+translatex -736
+][
+font 17
+height 740
+letterspacing 138
+color #b32b2b
+y 740
+]그리모어

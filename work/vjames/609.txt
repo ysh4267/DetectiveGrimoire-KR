@@ -1,0 +1,36 @@
+[
+xmin -8775
+ymin 167
+xmax 6453
+ymax 2975
+translatex -10346
+][
+font 17
+height 740
+letterspacing 89
+color #ffffff
+x 3202
+y 740
+spacingpair "잠" "깐" 49
+spacingpair "깐" "." 49
+spacingpair " " "" -73
+]잠깐... [
+letterspacing 0
+x 2441
+y 1740
+spacing " " 16
+spacingpair "그" "럼" 138
+spacingpair "럼" " " 138
+spacingpair "오" "른" 138
+spacingpair "른" "쪽" 138
+spacingpair "쪽" " " 138
+]그럼 오른쪽 [
+x 2692
+y 2760
+spacingpair "위" " " 138
+spacingpair " " "버" 16
+spacingpair "버" "튼" 138
+spacingpair "튼" "은" 138
+spacingpair "은" "?" 138
+spacingpair "?" "" 44
+]위 버튼은?

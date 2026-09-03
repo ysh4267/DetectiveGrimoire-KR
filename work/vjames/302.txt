@@ -1,0 +1,31 @@
+[
+xmin -8753
+ymin 167
+xmax 7252
+ymax 1968
+translatex -10346
+][
+font 17
+height 728
+letterspacing 18
+color #ffffff
+x 1996
+y 740
+spacingpair "제" "발" 125
+spacingpair "발" " " 125
+spacingpair "사" "실" 125
+spacingpair "실" " " 125
+spacingpair "관" "계" 125
+spacingpair "계" " " 125
+]제발 사실 관계 [
+x 1593
+y 1740
+spacingpair "좀" " " 125
+spacingpair "똑" "바" 125
+spacingpair "바" "로" 125
+spacingpair "로" " " 125
+spacingpair "아" "세" 125
+spacingpair "세" "요" 125
+spacingpair "요" "!" 125
+spacingpair "!" "" 4
+]좀 똑바로 아세요!

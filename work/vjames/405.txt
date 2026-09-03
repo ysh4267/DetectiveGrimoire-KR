@@ -1,0 +1,35 @@
+[
+xmin -9625
+ymin 141
+xmax 7163
+ymax 2970
+translatex -10346
+][
+font 17
+height 740
+color #ffffff
+x 2384
+y 740
+spacing " " 16
+spacing "." 89
+spacingpair "늘" " " 138
+spacingpair "그" "렇" 138
+spacingpair "렇" "듯" 138
+spacingpair "듯" "." 138
+]늘 그렇듯... [
+x 1723
+y 1740
+spacing " " 16
+spacingpair "지" "금" 138
+spacingpair "금" "은" 138
+spacingpair "은" " " 138
+spacingpair "최" "소" 138
+spacingpair "소" "한" 138
+spacingpair "한" "의" 138
+spacingpair "의" " " 138
+]지금은 최소한의 [
+letterspacing 138
+x 2145
+y 2760
+spacingpair "." "" -49
+]정보뿐이에요.

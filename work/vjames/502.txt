@@ -1,0 +1,20 @@
+[
+xmin -8281
+ymin 173
+xmax 6265
+ymax 778
+translatex -10346
+][
+font 17
+height 740
+color #ffffff
+x 2040
+y 740
+spacingpair "여" "긴" 138
+spacingpair "긴" " " 138
+spacingpair " " "어" 16
+spacingpair "어" "디" 138
+spacingpair "디" "지" 138
+spacingpair "지" "?" 138
+spacingpair "?" "" 44
+]여긴 어디지?

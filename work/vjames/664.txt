@@ -1,0 +1,40 @@
+[
+xmin -9722
+ymin 141
+xmax 6914
+ymax 2975
+translatex -10346
+][
+font 17
+height 740
+color #ffffff
+x 1914
+y 740
+spacing " " 16
+spacingpair "맞" "아" 138
+spacingpair "아" "요" 138
+spacingpair "요" "." 138
+spacingpair "." " " 89
+spacingpair "막" "히" 138
+spacingpair "히" "면" 138
+spacingpair "면" " " 138
+]맞아요. 막히면 [
+x 2408
+y 1740
+spacing " " 16
+spacingpair "사" "건" 138
+spacingpair "건" " " 138
+spacingpair "파" "일" 138
+spacingpair "일" "을" 138
+spacingpair "을" " " 138
+]사건 파일을 [
+x 2355
+y 2760
+spacingpair "읽" "어" 138
+spacingpair "어" " " 138
+spacingpair " " "보" 16
+spacingpair "보" "세" 138
+spacingpair "세" "요" 138
+spacingpair "요" "!" 138
+spacingpair "!" "" 19
+]읽어 보세요!

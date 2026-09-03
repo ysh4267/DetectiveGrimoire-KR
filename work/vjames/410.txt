@@ -1,0 +1,31 @@
+[
+xmin -9082
+ymin 145
+xmax 7563
+ymax 1785
+translatex -10346
+][
+font 17
+height 740
+color #ffffff
+x 2342
+y 740
+spacing """ 47
+spacing " " 16
+spacingpair "보" "기" 138
+spacingpair "기" """ 138
+spacingpair "는" " " 138
+spacingpair "그" " " 138
+]"보기"는 그 [
+x 1336
+y 1740
+spacing "이" 138
+spacingpair "생" "물" 138
+spacingpair "물" "의" 138
+spacingpair "의" " " 138
+spacingpair " " "이" 16
+spacingpair "름" "이" 138
+spacingpair "에" "요" 138
+spacingpair "요" "." 138
+spacingpair "." "" 89
+]생물의 이름이에요.

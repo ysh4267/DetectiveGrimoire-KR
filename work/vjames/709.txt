@@ -1,0 +1,19 @@
+[
+xmin -9355
+ymin 141
+xmax 5372
+ymax 961
+translatex -10346
+][
+font 17
+height 740
+letterspacing 89
+color #ffffff
+x 940
+y 740
+spacingpair "막" "히" 49
+spacingpair "히" "신" 49
+spacingpair "신" "다" 49
+spacingpair "다" "면" 49
+spacingpair "면" "." 49
+]막히신다면...

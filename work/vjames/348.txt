@@ -1,0 +1,27 @@
+[
+xmin -7596
+ymin 141
+xmax 6143
+ymax 1784
+translatex -10346
+][
+font 17
+height 570
+color #ffffff
+x 2749
+y 740
+spacing " " 15
+spacing "." 71
+spacingpair "아" "니" 114
+spacingpair "니" "," 114
+spacingpair "," " " 71
+spacingpair "이" "봐" 114
+spacingpair "봐" "." 114
+]아니, 이봐... [
+x 3693
+y 1740
+spacingpair "참" " " 114
+spacingpair " " "나" 15
+spacingpair "나" "." 114
+spacingpair "." "" 71
+]참 나.

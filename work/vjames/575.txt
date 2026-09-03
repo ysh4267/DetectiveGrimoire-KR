@@ -1,0 +1,43 @@
+[
+xmin -9946
+ymin 141
+xmax 7302
+ymax 2975
+translatex -10346
+][
+font 17
+height 740
+color #ffffff
+x 1588
+y 740
+spacing " " 16
+spacingpair "간" "단" 138
+spacingpair "단" "해" 138
+spacingpair "해" "요" 138
+spacingpair "요" "," 138
+spacingpair "," " " 89
+spacingpair "만" "나" 138
+spacingpair "나" "는" 138
+spacingpair "는" " " 138
+]간단해요, 만나는 [
+x 2082
+y 1740
+spacing " " 16
+spacingpair "사" "람" 138
+spacingpair "람" "을" 138
+spacingpair "을" " " 138
+spacingpair "눌" "러" 138
+spacingpair "러" "서" 138
+spacingpair "서" " " 138
+]사람을 눌러서 [
+letterspacing 16
+x 1945
+y 2760
+spacingpair "말" "을" 122
+spacingpair "을" " " 122
+spacingpair "걸" "면" 122
+spacingpair "면" " " 122
+spacingpair "돼" "요" 122
+spacingpair "요" "." 122
+spacingpair "." "" 73
+]말을 걸면 돼요.

@@ -1,0 +1,24 @@
+[
+xmin -7712
+ymin 173
+xmax 6234
+ymax 1786
+translatex -10346
+][
+font 17
+height 646
+color #ffffff
+x 2633
+y 740
+spacing " " 16
+spacing "." 79
+spacingpair "이" " " 125
+spacingpair "동" "네" 125
+spacingpair "네" "는" 125
+spacingpair "는" "." 125
+]이 동네는... [
+letterspacing 125
+x 3048
+y 1740
+spacingpair "." "" -46
+]유명해요.

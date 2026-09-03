@@ -1,0 +1,27 @@
+[
+xmin -9027
+ymin 167
+xmax 6963
+ymax 1968
+translatex -10346
+][
+font 17
+height 740
+letterspacing 138
+color #ffffff
+x 3015
+y 740
+spacingpair " " "" -122
+]피살자는 [
+letterspacing 0
+x 2164
+y 1740
+spacingpair "리" "처" 138
+spacingpair "처" "드" 138
+spacingpair "드" " " 138
+spacingpair " " "레" 16
+spacingpair "레" "밍" 138
+spacingpair "밍" "턴" 138
+spacingpair "턴" "." 138
+spacingpair "." "" 89
+]리처드 레밍턴.

@@ -1,0 +1,24 @@
+[
+xmin -9056
+ymin 167
+xmax 7512
+ymax 961
+translatex -10346
+][
+font 17
+height 618
+letterspacing 18
+color #ffffff
+x 1260
+y 740
+spacing "!" 5
+spacingpair "시" "간" 111
+spacingpair "간" " " 111
+spacingpair "낭" "비" 111
+spacingpair "비" " " 111
+spacingpair "그" "만" 111
+spacingpair "만" "하" 111
+spacingpair "하" "세" 111
+spacingpair "세" "요" 111
+spacingpair "요" "!" 111
+]시간 낭비 그만하세요!!

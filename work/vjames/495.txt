@@ -1,0 +1,20 @@
+[
+xmin -8087
+ymin 170
+xmax 6606
+ymax 778
+translatex -10346
+][
+font 17
+height 730
+letterspacing 19
+color #ffffff
+x 2240
+y 740
+spacingpair "뭘" " " 125
+spacingpair "해" "야" 125
+spacingpair "야" " " 125
+spacingpair "하" "지" 125
+spacingpair "지" "?" 125
+spacingpair "?" "" 29
+]뭘 해야 하지?

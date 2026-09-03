@@ -63,6 +63,13 @@ ID입니다. 둘 다 화면 텍스트를 담고 있지 않습니다.
 | 줄이 단어 중간에서 끊김 | `wrap_lines` — 어절 경계에서 균형 잡힌 DP 줄바꿈 |
 | 교체 폰트가 원본보다 ~12% 넓어 크레딧 등이 잘림 | `fit_scale` — 원본 `TextBounds` 에 맞게 글자 크기 축소(하한 0.72) |
 | 레코드 `x` 가 영문 폭 기준이라 정렬이 들쭉날쭉 | `realign` — 가운데 정렬 블록은 bounds 중앙 기준으로 재계산 |
+| 한글이 세로로 커서 윗줄과 부딪힘 (이름표 「제임스/경관」) | `vfit_scale` — 줄 간 잉크 충돌을 검사해 축소 |
+
+`vfit_scale` 은 **절대 기준이 아니라 원문 대비 증가분**만 봅니다. 크레딧 일부는
+1080 twips 글자를 680 twips 행간에 얹는 빡빡한 설계라, 절대 기준으로 재면 손대지도
+않은 영문 이름까지 하한(0.72)까지 줄어듭니다. 한글이 라틴 대문자(+0.754 em)보다
+높아서(+0.843 / −0.090 em) 늘어난 만큼만 보정하면 전체 3,035개 중 **37개(1.2%)** 만
+축소됩니다.
 
 `record_lines()` 가 뒤 두 가지의 전제입니다. **하나의 DefineText가 한 줄에 여러
 레코드를 둘 수 있습니다** (이름표가 `"OFFICER " + "JAMES"` 로 쪼개져 있음).
@@ -187,6 +194,39 @@ Steam 라이브러리에서 **속성 → 설치된 파일 → 게임 파일 무�
 ```
 %APPDATA%\air.com.sfbgames.DetectiveGrimoire\Local Store\#SharedObjects\DetectiveGrimoireDesktopSteam.swf\DetectiveGrimoireSave.sol
 ```
+
+## 세이브 슬롯이 눌러도 안 열릴 때 (게임 자체 버그)
+
+패치와 무관한 **원본 게임의 버그**입니다. 원본 파일로 되돌려도 똑같이 재현됩니다.
+
+`TitleScreen.onLoadSlot` 은 이렇게 동작합니다.
+
+```actionscript
+screenManager.replaceScreen(new HeadphonesScreen(
+    Area(GameData.areaList.byID(saveData.areaCurrent)).screen))
+```
+
+`AreaList.currentAreaID` 의 초깃값은 **-1** 이고, 플레이어가 실제로 어떤 장소에
+들어가야 진짜 id로 바뀝니다. 그 전에 — 즉 **인트로 도중에** — 게임이 종료되면
+자동저장이 `areaCurrent = -1` 을 기록합니다. 다시 켜서 그 슬롯을 누르면
+`byID(-1)` 이 `undefined` 를 돌려주고, `Area(undefined)` 는 `null` 이 되며,
+`.screen` 접근이 예외를 던집니다. 그 예외가 내부에서 삼켜져서 **슬롯 정보는
+멀쩡히 보이는데 눌러도 아무 일도 일어나지 않습니다.**
+
+`work/readsol.py` 로 진단하고 `work/fixsol.py` 로 고칩니다.
+
+```bash
+SOL="$APPDATA/air.com.sfbgames.DetectiveGrimoire/Local Store/#SharedObjects/DetectiveGrimoireDesktopSteam.swf/DetectiveGrimoireSave.sol"
+
+python work/readsol.py "$SOL"              # areaCurrent 확인
+python work/fixsol.py  "$SOL" --dry-run    # 미리보기
+python work/fixsol.py  "$SOL"              # areaCurrent -> 0 (늪 선착장), .bak 자동 생성
+```
+
+`readsol.py` 는 SOL의 AMF3를 파싱하고, `fixsol.py` 는 해당 정수 값의 바이트
+구간만 바꿔 쓴 뒤 SOL 헤더의 길이 필드를 다시 계산합니다. AMF3의 문자열·객체
+참조 테이블은 바이트 위치가 아니라 **등장 순서**를 쓰므로, 값의 길이가 달라져도
+안전합니다.
 
 ## 라이선스 / 주의
 

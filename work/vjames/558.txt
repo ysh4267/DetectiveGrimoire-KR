@@ -1,0 +1,15 @@
+[
+xmin -10029
+ymin 172
+xmax 4324
+ymax 956
+translatex -10346
+][
+font 17
+height 740
+letterspacing 138
+color #ffffff
+x 300
+y 740
+spacingpair "?" "" -94
+]용의자들은?

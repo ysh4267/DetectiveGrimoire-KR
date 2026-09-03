@@ -1,0 +1,32 @@
+[
+xmin -9621
+ymin 173
+xmax 7386
+ymax 1963
+translatex -10346
+][
+font 17
+height 740
+letterspacing 16
+color #ffffff
+x 1529
+y 740
+spacing "저" 122
+spacing "." 73
+spacingpair "게" "." 122
+spacingpair "우" "리" 122
+spacingpair "리" " " 122
+]저... 저게... 우리 [
+letterspacing 0
+x 1631
+y 1740
+spacingpair "살" "인" 138
+spacingpair "인" " " 138
+spacingpair " " "용" 16
+spacingpair "용" "의" 138
+spacingpair "의" "자" 138
+spacingpair "자" "라" 138
+spacingpair "라" "고" 138
+spacingpair "고" "?" 138
+spacingpair "?" "" 44
+]살인 용의자라고?

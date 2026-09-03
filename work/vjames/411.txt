@@ -1,0 +1,25 @@
+[
+xmin -8300
+ymin 141
+xmax 6846
+ymax 1960
+translatex -10346
+][
+font 17
+height 735
+color #ffffff
+x 2045
+y 740
+spacing "." 92
+spacing " " 20
+spacingpair "뭐" "." 149
+spacingpair "요" "즘" 149
+spacingpair "즘" "에" 149
+spacingpair "에" "나" 149
+spacingpair "나" " " 149
+]뭐... 요즘에나 [
+letterspacing 149
+x 3226
+y 1740
+spacingpair "." "" -57
+]그렇죠.

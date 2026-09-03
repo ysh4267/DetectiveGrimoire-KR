@@ -1,0 +1,21 @@
+[
+xmin -8080
+ymin 141
+xmax 6602
+ymax 779
+translatex -10346
+][
+font 17
+height 627
+letterspacing 16
+color #ffffff
+x 2240
+y 740
+spacingpair "우" "리" 107
+spacingpair "리" " " 107
+spacingpair "사" "건" 107
+spacingpair "건" " " 107
+spacingpair "파" "일" 107
+spacingpair "일" "?" 107
+spacingpair "?" "" 24
+]우리 사건 파일?

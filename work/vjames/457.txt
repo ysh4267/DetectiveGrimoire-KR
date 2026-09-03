@@ -1,0 +1,33 @@
+[
+xmin -8468
+ymin 141
+xmax 7003
+ymax 1968
+translatex -10346
+][
+font 17
+height 625
+letterspacing 15
+color #ffffff
+x 2357
+y 740
+spacingpair "여" "기" 106
+spacingpair "기" "가" 106
+spacingpair "가" " " 106
+spacingpair "모" "든" 106
+spacingpair "든" " " 106
+spacingpair "게" " " 106
+]여기가 모든 게 [
+letterspacing 0
+x 1879
+y 1740
+spacing "." 76
+spacingpair "시" "작" 121
+spacingpair "작" "된" 121
+spacingpair "된" " " 121
+spacingpair " " "곳" 15
+spacingpair "곳" "이" 121
+spacingpair "이" "에" 121
+spacingpair "에" "요" 121
+spacingpair "요" "." 121
+]시작된 곳이에요...

@@ -1,0 +1,45 @@
+[
+xmin -9462
+ymin 170
+xmax 7645
+ymax 2975
+translatex -10346
+][
+font 17
+height 740
+letterspacing 16
+color #ffffff
+x 1284
+y 740
+spacingpair "존" "재" 122
+spacingpair "재" "하" 122
+spacingpair "하" "지" 122
+spacingpair "지" " " 122
+spacingpair "않" "을" 122
+spacingpair "을" " " 122
+spacingpair "수" "도" 122
+spacingpair "도" " " 122
+]존재하지 않을 수도 [
+x 1944
+y 1740
+spacing "." 73
+spacingpair "있" "는" 122
+spacingpair "는" " " 122
+spacingpair "걸" "." 122
+spacingpair "대" "체" 122
+spacingpair "체" " " 122
+]있는 걸... 대체 [
+letterspacing 0
+x 1278
+y 2760
+spacingpair "어" "떻" 138
+spacingpair "떻" "게" 138
+spacingpair "게" " " 138
+spacingpair " " "체" 16
+spacingpair "체" "포" 138
+spacingpair "포" "하" 138
+spacingpair "하" "라" 138
+spacingpair "라" "고" 138
+spacingpair "고" "?" 138
+spacingpair "?" "" 44
+]어떻게 체포하라고?

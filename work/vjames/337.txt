@@ -1,0 +1,35 @@
+[
+xmin -10117
+ymin 141
+xmax 7266
+ymax 2970
+translatex -10346
+][
+font 17
+height 740
+letterspacing 16
+color #ffffff
+x 2226
+y 740
+spacingpair "6" "0" 84
+spacingpair "0" "년" 84
+spacingpair "년" " " 122
+spacingpair "넘" "게" 122
+spacingpair "게" " " 122
+spacingpair "이" " " 122
+]60년 넘게 이 [
+x 1625
+y 1740
+spacingpair "늪" "에" 122
+spacingpair "에" " " 122
+spacingpair "살" "아" 122
+spacingpair "아" "온" 122
+spacingpair "온" " " 122
+spacingpair "생" "물" 122
+spacingpair "물" " " 122
+]늪에 살아온 생물 [
+letterspacing 138
+x 2147
+y 2760
+spacingpair "." "" -49
+]이야기라고요.

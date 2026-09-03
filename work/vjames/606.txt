@@ -1,0 +1,25 @@
+[
+xmin -8740
+ymin 167
+xmax 7130
+ymax 1960
+translatex -10346
+][
+font 17
+height 740
+color #ffffff
+x 2057
+y 740
+spacing "." 89
+spacing " " 16
+spacingpair "굳" "이" 138
+spacingpair "이" " " 138
+spacingpair "그" "렇" 138
+spacingpair "렇" "게" 138
+spacingpair "게" " " 138
+]...굳이 그렇게 [
+letterspacing 138
+x 1818
+y 1740
+spacingpair "." "" -49
+]말하시겠다면요.

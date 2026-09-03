@@ -1,0 +1,44 @@
+[
+xmin -10030
+ymin 173
+xmax 7842
+ymax 2970
+translatex -10346
+][
+font 17
+height 740
+letterspacing 16
+color #ffffff
+x 1634
+y 740
+spacingpair "전" "설" 122
+spacingpair "설" "에" 122
+spacingpair "에" " " 122
+spacingpair "따" "르" 122
+spacingpair "르" "면" 122
+spacingpair "면" " " 122
+spacingpair "이" " " 122
+]전설에 따르면 이 [
+x 1991
+y 1740
+spacingpair "늪" "엔" 122
+spacingpair "엔" " " 122
+spacingpair "정" "체" 122
+spacingpair "체" " " 122
+spacingpair "모" "를" 122
+spacingpair "를" " " 122
+]늪엔 정체 모를 [
+letterspacing 0
+x 1067
+y 2760
+spacing "." 89
+spacingpair "생" "물" 138
+spacingpair "물" "이" 138
+spacingpair "이" " " 138
+spacingpair " " "산" 16
+spacingpair "산" "다" 138
+spacingpair "다" "더" 138
+spacingpair "더" "군" 138
+spacingpair "군" "요" 138
+spacingpair "요" "." 138
+]생물이 산다더군요...

@@ -1,0 +1,29 @@
+[
+xmin -7207
+ymin 167
+xmax 6534
+ymax 1963
+translatex -10346
+][
+font 17
+height 598
+color #ffffff
+x 3168
+y 740
+spacing " " 18
+spacing "." 76
+spacingpair "아" " " 126
+spacingpair "그" "리" 126
+spacingpair "리" "고" 126
+spacingpair "고" "." 126
+]아 그리고... [
+x 3140
+y 1740
+spacingpair "-" "서" 55
+spacingpair "서" "두" 126
+spacingpair "두" "르" 126
+spacingpair "르" "세" 126
+spacingpair "세" "요" 126
+spacingpair "요" "." 126
+spacingpair "." "" 76
+]-서두르세요.

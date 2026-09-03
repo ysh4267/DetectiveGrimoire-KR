@@ -1,0 +1,41 @@
+[
+xmin -10022
+ymin 141
+xmax 7410
+ymax 2967
+translatex -10346
+][
+font 17
+height 740
+letterspacing 16
+color #ffffff
+x 1888
+y 740
+spacingpair "내" " " 122
+spacingpair "수" "염" 122
+spacingpair "염" " " 122
+spacingpair "얘" "기" 122
+spacingpair "기" " " 122
+spacingpair "안" " " 122
+]내 수염 얘기 안 [
+x 1852
+y 1740
+spacingpair "하" "면" 122
+spacingpair "면" "," 122
+spacingpair "," " " 73
+spacingpair "나" "도" 122
+spacingpair "도" " " 122
+spacingpair "자" "네" 122
+spacingpair "네" " " 122
+]하면, 나도 자네 [
+x 1495
+y 2760
+spacingpair "수" "염" 122
+spacingpair "염" " " 122
+spacingpair "얘" "긴" 122
+spacingpair "긴" " " 122
+spacingpair "안" " " 122
+spacingpair "하" "지" 122
+spacingpair "지" "." 122
+spacingpair "." "" 73
+]수염 얘긴 안 하지.

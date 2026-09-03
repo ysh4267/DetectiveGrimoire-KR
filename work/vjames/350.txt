@@ -1,0 +1,34 @@
+[
+xmin -9538
+ymin 141
+xmax 8081
+ymax 1968
+translatex -10346
+][
+font 17
+height 691
+letterspacing 18
+color #ffffff
+x 807
+y 740
+spacingpair "원" "래" 120
+spacingpair "래" " " 120
+spacingpair "어" "려" 120
+spacingpair "려" "운" 120
+spacingpair "운" " " 120
+spacingpair "사" "건" 120
+spacingpair "건" "일" 120
+spacingpair "일" "수" 120
+spacingpair "수" "록" 120
+spacingpair "록" " " 120
+]원래 어려운 사건일수록 [
+letterspacing 86
+x 2040
+y 1740
+spacingpair "즐" "기" 52
+spacingpair "기" "셨" 52
+spacingpair "셨" "잖" 52
+spacingpair "잖" "아" 52
+spacingpair "아" "요" 52
+spacingpair "요" "." 52
+]즐기셨잖아요...

@@ -1,0 +1,41 @@
+[
+xmin -8891
+ymin 167
+xmax 6963
+ymax 2791
+translatex -10346
+][
+font 17
+height 740
+color #ffffff
+x 2386
+y 740
+spacing " " 16
+spacingpair "-" "아" 61
+spacingpair "아" "," 138
+spacingpair "," " " 89
+spacingpair "기" "억" 138
+spacingpair "억" "나" 138
+spacingpair "나" "." 138
+spacingpair "." " " 89
+]-아, 기억나. [
+x 2456
+y 1740
+spacing " " 16
+spacingpair "기" "록" 138
+spacingpair "록" "은" 138
+spacingpair "은" " " 138
+spacingpair "전" "부" 138
+spacingpair "부" " " 138
+]기록은 전부 [
+letterspacing 16
+x 1963
+y 2760
+spacingpair "거" "기" 122
+spacingpair "기" " " 122
+spacingpair "넣" "어" 122
+spacingpair "어" " " 122
+spacingpair "두" "지" 122
+spacingpair "지" "." 122
+spacingpair "." "" 73
+]거기 넣어 두지.

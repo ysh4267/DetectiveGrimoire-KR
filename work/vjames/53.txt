@@ -1,0 +1,22 @@
+[
+xmin -7942
+ymin 145
+xmax 6455
+ymax 961
+translatex -10346
+][
+font 17
+height 548
+color #ffffff
+x 2360
+y 740
+spacingpair "도" "무" 109
+spacingpair "무" "지" 109
+spacingpair "지" " " 109
+spacingpair " " "모" 14
+spacingpair "모" "르" 109
+spacingpair "르" "겠" 109
+spacingpair "겠" "군" 109
+spacingpair "군" "." 109
+spacingpair "." "" 68
+]도무지 모르겠군.

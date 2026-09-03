@@ -1,0 +1,27 @@
+[
+xmin -9828
+ymin 166
+xmax 8351
+ymax 861
+translatex -10346
+][
+font 17
+height 600
+letterspacing 13
+color #ffffff
+x 480
+y 740
+spacing "어" 99
+spacingpair "벌" "써" 99
+spacingpair "써" " " 99
+spacingpair "돌" "아" 99
+spacingpair "아" "오" 99
+spacingpair "오" "셨" 99
+spacingpair "셨" "어" 99
+spacingpair "요" "," 99
+spacingpair "," " " 59
+spacingpair "그" "리" 99
+spacingpair "리" "모" 99
+spacingpair "모" "어" 99
+spacingpair "?" "" 22
+]벌써 돌아오셨어요, 그리모어?

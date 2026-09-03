@@ -1,0 +1,30 @@
+[
+xmin -8637
+ymin 173
+xmax 7114
+ymax 1968
+translatex -10346
+][
+font 17
+height 740
+color #ffffff
+x 2388
+y 740
+spacing " " 16
+spacingpair "자" "네" 138
+spacingpair "네" " " 138
+spacingpair "콧" "수" 138
+spacingpair "수" "염" 138
+spacingpair "염" "이" 138
+spacingpair "이" " " 138
+]자네 콧수염이 [
+x 2435
+y 1740
+spacing "." 89
+spacingpair "신" "경" 138
+spacingpair "경" " " 138
+spacingpair " " "쓰" 16
+spacingpair "쓰" "여" 138
+spacingpair "여" "서" 138
+spacingpair "서" "." 138
+]신경 쓰여서...

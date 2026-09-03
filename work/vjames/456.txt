@@ -1,0 +1,41 @@
+[
+xmin -10237
+ymin 145
+xmax 7980
+ymax 2970
+translatex -10346
+][
+font 17
+height 740
+color #ffffff
+x 2449
+y 740
+spacing " " 16
+spacingpair "보" "기" 138
+spacingpair "기" "는" 138
+spacingpair "는" " " 138
+spacingpair "만" "화" 138
+spacingpair "화" " " 138
+]보기는 만화 [
+x 2092
+y 1740
+spacing "가" 138
+spacing " " 16
+spacingpair "캐" "릭" 138
+spacingpair "릭" "터" 138
+spacingpair "터" "가" 138
+spacingpair "다" "가" 138
+]캐릭터가 다가 [
+x 931
+y 2760
+spacing "." 89
+spacingpair "아" "니" 138
+spacingpair "니" "에" 138
+spacingpair "에" "요" 138
+spacingpair "요" "." 138
+spacingpair " " "장" 16
+spacingpair "장" "담" 138
+spacingpair "담" "하" 138
+spacingpair "하" "죠" 138
+spacingpair "죠" "." 138
+]아니에요... 장담하죠.

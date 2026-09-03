@@ -1,0 +1,49 @@
+[
+xmin -9269
+ymin 141
+xmax 6812
+ymax 3982
+translatex -10346
+][
+font 17
+height 740
+color #ffffff
+x 2306
+y 740
+spacing " " 16
+spacingpair "우" "선" 138
+spacingpair "선" "," 138
+spacingpair "," " " 89
+spacingpair "늪" "에" 138
+spacingpair "에" "서" 138
+spacingpair "서" " " 138
+]우선, 늪에서 [
+x 2086
+y 1740
+spacing " " 16
+spacingpair "발" "견" 138
+spacingpair "견" "한" 138
+spacingpair "한" " " 138
+spacingpair "물" "건" 138
+spacingpair "건" "은" 138
+spacingpair "은" " " 138
+]발견한 물건은 [
+x 2086
+y 2760
+spacing " " 16
+spacingpair "눌" "러" 138
+spacingpair "러" "서" 138
+spacingpair "서" " " 138
+spacingpair "조" "사" 138
+spacingpair "사" "할" 138
+spacingpair "할" " " 138
+]눌러서 조사할 [
+x 2764
+y 3760
+spacingpair "수" " " 138
+spacingpair " " "있" 16
+spacingpair "있" "어" 138
+spacingpair "어" "요" 138
+spacingpair "요" "." 138
+spacingpair "." "" 89
+]수 있어요.

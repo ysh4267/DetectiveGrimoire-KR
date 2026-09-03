@@ -1,0 +1,27 @@
+[
+xmin -8217
+ymin 141
+xmax 6137
+ymax 1968
+translatex -10346
+][
+font 17
+height 740
+color #ffffff
+x 2803
+y 740
+spacing " " 16
+spacingpair "곧" " " 138
+spacingpair "아" "시" 138
+spacingpair "시" "게" 138
+spacingpair "게" " " 138
+]곧 아시게 [
+x 2766
+y 1740
+spacingpair "될" " " 138
+spacingpair " " "거" 16
+spacingpair "거" "예" 138
+spacingpair "예" "요" 138
+spacingpair "요" "." 138
+spacingpair "." "" 89
+]될 거예요.

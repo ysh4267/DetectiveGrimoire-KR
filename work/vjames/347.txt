@@ -1,0 +1,61 @@
+[
+xmin -9844
+ymin 145
+xmax 8024
+ymax 3982
+translatex -10346
+][
+font 17
+height 740
+color #ffffff
+x 1953
+y 740
+spacing " " 16
+spacingpair "그" "래" 138
+spacingpair "래" "요" 138
+spacingpair "요" "." 138
+spacingpair "." " " 89
+spacingpair "네" "스" 138
+spacingpair "스" "호" 138
+spacingpair "호" " " 138
+]그래요. 네스호 [
+letterspacing 16
+x 1275
+y 1740
+spacingpair "괴" "물" 122
+spacingpair "물" " " 122
+spacingpair "같" "은" 122
+spacingpair "은" " " 122
+spacingpair "헛" "소" 122
+spacingpair "소" "문" 122
+spacingpair "문" "이" 122
+spacingpair "이" " " 122
+]괴물 같은 헛소문이 [
+letterspacing 0
+x 882
+y 2760
+spacing " " 16
+spacingpair "아" "니" 138
+spacingpair "니" "라" 138
+spacingpair "라" "고" 138
+spacingpair "고" "요" 138
+spacingpair "요" "." 138
+spacingpair "." " " 89
+spacingpair "진" "지" 138
+spacingpair "지" "하" 138
+spacingpair "하" "게" 138
+spacingpair "게" " " 138
+]아니라고요. 진지하게 [
+x 1340
+y 3760
+spacingpair "받" "아" 138
+spacingpair "아" "들" 138
+spacingpair "들" "이" 138
+spacingpair "이" "셔" 138
+spacingpair "셔" "야" 138
+spacingpair "야" " " 138
+spacingpair " " "해" 16
+spacingpair "해" "요" 138
+spacingpair "요" "." 138
+spacingpair "." "" 89
+]받아들이셔야 해요.

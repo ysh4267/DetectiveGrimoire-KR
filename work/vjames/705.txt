@@ -1,0 +1,43 @@
+[
+xmin -8673
+ymin 145
+xmax 6813
+ymax 3799
+translatex -10346
+][
+font 17
+height 740
+color #ffffff
+x 2748
+y 740
+spacingpair "그" "리" 138
+spacingpair "리" "모" 138
+spacingpair "모" "어" 138
+spacingpair "어" "!" 138
+spacingpair "!" " " 19
+spacingpair " " "" 16
+]그리모어! [
+x 2801
+y 1740
+spacing " " 16
+spacingpair "살" "인" 138
+spacingpair "인" " " 138
+spacingpair "사" "건" 138
+spacingpair "건" " " 138
+]살인 사건 [
+x 2087
+y 2760
+spacing " " 16
+spacingpair "수" "사" 138
+spacingpair "사" " " 138
+spacingpair "중" "이" 138
+spacingpair "이" "시" 138
+spacingpair "시" "잖" 138
+spacingpair "잖" " " 138
+]수사 중이시잖 [
+x 3409
+y 3760
+spacing "!" 19
+spacingpair "아" "요" 138
+spacingpair "요" "!" 138
+]아요!!

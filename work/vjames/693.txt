@@ -1,0 +1,55 @@
+[
+xmin -9618
+ymin 171
+xmax 7494
+ymax 3982
+translatex -10346
+][
+font 17
+height 740
+letterspacing 16
+color #ffffff
+x 1542
+y 740
+spacingpair "그" "리" 122
+spacingpair "리" "고" 122
+spacingpair "고" " " 122
+spacingpair "최" "근" 122
+spacingpair "근" " " 122
+spacingpair "몇" " " 122
+spacingpair "년" " " 122
+]그리고 최근 몇 년 [
+x 1862
+y 1740
+spacingpair "사" "이" 122
+spacingpair "이" "," 122
+spacingpair "," " " 73
+spacingpair "누" "군" 122
+spacingpair "군" "가" 122
+spacingpair "가" " " 122
+spacingpair "그" " " 122
+]사이, 누군가 그 [
+letterspacing 0
+x 1743
+y 2760
+spacing " " 16
+spacingpair "전" "설" 138
+spacingpair "설" "을" 138
+spacingpair "을" " " 138
+spacingpair "돈" "벌" 138
+spacingpair "벌" "이" 138
+spacingpair "이" "로" 138
+spacingpair "로" " " 138
+]전설을 돈벌이로 [
+x 1433
+y 3760
+spacing "." 89
+spacingpair "만" "든" 138
+spacingpair "든" " " 138
+spacingpair " " "모" 16
+spacingpair "모" "양" 138
+spacingpair "양" "이" 138
+spacingpair "이" "에" 138
+spacingpair "에" "요" 138
+spacingpair "요" "." 138
+]만든 모양이에요...

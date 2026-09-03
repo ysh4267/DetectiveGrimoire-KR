@@ -1,0 +1,23 @@
+[
+xmin -393
+ymin 167
+xmax 2288
+ymax 1490
+translatex -514
+][
+font 17
+height 619
+letterspacing 130
+color #b32b2b
+x 289
+y 740
+spacingpair " " "" -112
+]제임스 [
+font 17
+height 719
+letterspacing 0
+x 575
+y 1440
+spacingpair "경" "관" 150
+spacingpair "관" "" 150
+]경관

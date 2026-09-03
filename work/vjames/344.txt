@@ -1,0 +1,37 @@
+[
+xmin -9880
+ymin 167
+xmax 8295
+ymax 1960
+translatex -10346
+][
+font 17
+height 740
+color #ffffff
+x 605
+y 740
+spacing " " 16
+spacing "." 89
+spacingpair "누" "구" 138
+spacingpair "구" "한" 138
+spacingpair "한" "테" 138
+spacingpair "테" " " 138
+spacingpair "중" "요" 138
+spacingpair "요" "하" 138
+spacingpair "하" "냐" 138
+spacingpair "냐" "면" 138
+spacingpair "면" "." 138
+]누구한테 중요하냐면... [
+x 1540
+y 1740
+spacingpair "-" "바" 61
+spacingpair "바" "로" 138
+spacingpair "로" " " 138
+spacingpair " " "탐" 16
+spacingpair "탐" "정" 138
+spacingpair "정" "님" 138
+spacingpair "님" "이" 138
+spacingpair "이" "죠" 138
+spacingpair "죠" "." 138
+spacingpair "." "" 89
+]-바로 탐정님이죠.

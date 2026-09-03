@@ -1,0 +1,26 @@
+[
+xmin -9295
+ymin 141
+xmax 7161
+ymax 1784
+translatex -10346
+][
+font 17
+height 740
+color #ffffff
+x 1721
+y 740
+spacing "허" 138
+spacing "판" 138
+spacing " " 16
+spacingpair "벌" "판" 138
+spacingpair "한" "복" 138
+spacingpair "복" "판" 138
+]허허벌판 한복판 [
+letterspacing 89
+x 2940
+y 1740
+spacingpair "같" "은" 49
+spacingpair "은" "데" 49
+spacingpair "데" "." 49
+]같은데...

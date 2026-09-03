@@ -1,0 +1,29 @@
+[
+xmin -10100
+ymin 172
+xmax 9394
+ymax 961
+translatex -10346
+][
+font 17
+height 597
+letterspacing 17
+color #ffffff
+x 200
+y 740
+spacing "꼼" 108
+spacingpair "제" " " 108
+spacingpair "조" "언" 108
+spacingpair "언" "은" 108
+spacingpair "은" "," 108
+spacingpair "," " " 59
+spacingpair "히" " " 108
+spacingpair "하" "시" 108
+spacingpair "시" "라" 108
+spacingpair "라" "는" 108
+spacingpair "는" " " 108
+spacingpair "거" "예" 108
+spacingpair "예" "요" 108
+spacingpair "요" "." 108
+spacingpair "." "" 59
+]제 조언은, 꼼꼼히 하시라는 거예요.

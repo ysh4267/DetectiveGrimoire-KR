@@ -1,0 +1,31 @@
+[
+xmin -10072
+ymin 166
+xmax 6460
+ymax 2875
+translatex -10346
+][
+font 17
+height 740
+letterspacing 89
+color #ffffff
+x 3203
+y 740
+spacingpair "근" "데" 49
+spacingpair "데" "." 49
+spacingpair " " "" -73
+]근데... [
+letterspacing 0
+x 2799
+y 1740
+spacing " " 16
+spacingpair "그" " " 138
+spacingpair "주" "인" 138
+spacingpair "인" "이" 138
+spacingpair "이" " " 138
+]그 주인이 [
+letterspacing 138
+x 2436
+y 2760
+spacingpair "?" "" -94
+]피살자잖아?

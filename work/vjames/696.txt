@@ -1,0 +1,38 @@
+[
+xmin -9752
+ymin 174
+xmax 6949
+ymax 3982
+translatex -10346
+][
+font 17
+height 740
+color #ffffff
+x 1949
+y 740
+spacing " " 16
+spacingpair "네" "." 138
+spacingpair "." " " 89
+spacingpair "안" "타" 138
+spacingpair "타" "깝" 138
+spacingpair "깝" "게" 138
+spacingpair "게" "도" 138
+spacingpair "도" " " 138
+]네. 안타깝게도 [
+letterspacing 89
+x 2847
+y 1740
+spacingpair "그" "분" 49
+spacingpair "분" "은" 49
+spacingpair "은" "." 49
+spacingpair " " "" -73
+]그분은... [
+letterspacing 138
+x 3257
+y 2760
+spacingpair " " "" -122
+]심문이 [
+x 2507
+y 3760
+spacingpair "." "" -49
+]불가능하죠.

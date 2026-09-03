@@ -1,0 +1,51 @@
+[
+xmin -10085
+ymin 173
+xmax 7518
+ymax 3982
+translatex -10346
+][
+font 17
+height 740
+color #ffffff
+x 1364
+y 740
+spacing " " 16
+spacingpair "늪" "을" 138
+spacingpair "을" " " 138
+spacingpair "돌" "아" 138
+spacingpair "아" "다" 138
+spacingpair "다" "니" 138
+spacingpair "니" "려" 138
+spacingpair "려" "면" 138
+spacingpair "면" " " 138
+]늪을 돌아다니려면 [
+x 2435
+y 1740
+spacing " " 16
+spacingpair "오" "른" 138
+spacingpair "른" "쪽" 138
+spacingpair "쪽" " " 138
+spacingpair "아" "래" 138
+spacingpair "래" " " 138
+]오른쪽 아래 [
+x 2078
+y 2760
+spacing " " 16
+spacingpair "버" "튼" 138
+spacingpair "튼" "으" 138
+spacingpair "으" "로" 138
+spacingpair "로" " " 138
+spacingpair "이" "동" 138
+spacingpair "동" " " 138
+]버튼으로 이동 [
+x 2125
+y 3760
+spacing "." 89
+spacingpair "모" "드" 138
+spacingpair "드" "를" 138
+spacingpair "를" " " 138
+spacingpair " " "켜" 16
+spacingpair "켜" "고" 138
+spacingpair "고" "." 138
+]모드를 켜고...

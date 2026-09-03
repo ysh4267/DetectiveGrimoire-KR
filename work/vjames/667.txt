@@ -1,0 +1,24 @@
+[
+xmin -8990
+ymin 167
+xmax 7516
+ymax 778
+translatex -10346
+][
+font 17
+height 618
+letterspacing 18
+color #ffffff
+x 1340
+y 740
+spacing "." 61
+spacingpair "그" "래" 111
+spacingpair "래" "서" 111
+spacingpair "서" "." 111
+spacingpair "여" "긴" 111
+spacingpair "긴" " " 111
+spacingpair "어" "디" 111
+spacingpair "디" "지" 111
+spacingpair "지" "?" 111
+spacingpair "?" "" 27
+]그래서... 여긴 어디지?

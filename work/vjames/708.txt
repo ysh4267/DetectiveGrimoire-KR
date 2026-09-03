@@ -1,0 +1,35 @@
+[
+xmin -10264
+ymin 141
+xmax 7932
+ymax 1963
+translatex -10346
+][
+font 17
+height 740
+color #ffffff
+x 1724
+y 740
+spacing " " 16
+spacing "'" 68
+spacingpair "용" "의" 138
+spacingpair "의" "자" 138
+spacingpair "자" "마" 138
+spacingpair "마" "다" 138
+spacingpair "다" " " 138
+spacingpair "추" "궁" 138
+spacingpair "궁" "'" 138
+]용의자마다 '추궁' [
+letterspacing 16
+x 1504
+y 1740
+spacingpair "주" "제" 122
+spacingpair "제" "를" 122
+spacingpair "를" " " 122
+spacingpair "풀" "어" 122
+spacingpair "어" " " 122
+spacingpair "보" "세" 122
+spacingpair "세" "요" 122
+spacingpair "요" "." 122
+spacingpair "." "" 73
+]주제를 풀어 보세요.

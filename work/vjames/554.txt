@@ -1,0 +1,37 @@
+[
+xmin -9361
+ymin 145
+xmax 7912
+ymax 1968
+translatex -10346
+][
+font 17
+height 652
+color #ffffff
+x 1931
+y 740
+spacing " " 17
+spacingpair "당" "황" 131
+spacingpair "황" "하" 131
+spacingpair "하" "지" 131
+spacingpair "지" " " 131
+spacingpair "마" "세" 131
+spacingpair "세" "요" 131
+spacingpair "요" "," 131
+spacingpair "," " " 81
+]당황하지 마세요, [
+letterspacing 17
+x 987
+y 1740
+spacingpair "기" "본" 114
+spacingpair "본" "부" 114
+spacingpair "부" "터" 114
+spacingpair "터" " " 114
+spacingpair "짚" "어" 114
+spacingpair "어" " " 114
+spacingpair "드" "릴" 114
+spacingpair "릴" "게" 114
+spacingpair "게" "요" 114
+spacingpair "요" "." 114
+spacingpair "." "" 64
+]기본부터 짚어 드릴게요.

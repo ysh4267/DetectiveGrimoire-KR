@@ -1,0 +1,53 @@
+[
+xmin -9984
+ymin 141
+xmax 7483
+ymax 3982
+translatex -10346
+][
+font 17
+height 740
+letterspacing 16
+color #ffffff
+x 1440
+y 740
+spacingpair "내" "가" 122
+spacingpair "가" " " 122
+spacingpair "읽" "은" 122
+spacingpair "은" " " 122
+spacingpair "건" " " 122
+spacingpair "백" " " 122
+spacingpair "년" " " 122
+]내가 읽은 건 백 년 [
+x 1642
+y 1740
+spacingpair "전" "에" 122
+spacingpair "에" " " 122
+spacingpair "웬" " " 122
+spacingpair "얼" "간" 122
+spacingpair "간" "이" 122
+spacingpair "이" "가" 122
+spacingpair "가" " " 122
+]전에 웬 얼간이가 [
+letterspacing 0
+x 1742
+y 2760
+spacing " " 16
+spacingpair "여" "기" 138
+spacingpair "기" "서" 138
+spacingpair "서" " " 138
+spacingpair "외" "계" 138
+spacingpair "계" "인" 138
+spacingpair "인" "을" 138
+spacingpair "을" " " 138
+]여기서 외계인을 [
+letterspacing 16
+x 1963
+y 3760
+spacing "다" 122
+spacingpair "봤" "다" 122
+spacingpair "는" " " 122
+spacingpair "게" " " 122
+spacingpair "야" "." 122
+spacingpair "." "" 73
+]봤다는 게 다야.

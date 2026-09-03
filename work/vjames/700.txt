@@ -1,0 +1,33 @@
+[
+xmin -9459
+ymin 145
+xmax 7732
+ymax 1868
+translatex -10346
+][
+font 17
+height 740
+color #ffffff
+x 2405
+y 740
+spacing "." 89
+spacing " " 16
+spacingpair "이" "미" 138
+spacingpair "미" " " 138
+spacingpair "경" "고" 138
+spacingpair "고" " " 138
+]...이미 경고 [
+x 1198
+y 1740
+spacingpair "드" "렸" 138
+spacingpair "렸" "잖" 138
+spacingpair "잖" "아" 138
+spacingpair "아" "요" 138
+spacingpair "요" "," 138
+spacingpair "," " " 89
+spacingpair " " "탐" 16
+spacingpair "탐" "정" 138
+spacingpair "정" "님" 138
+spacingpair "님" "!" 138
+spacingpair "!" "" 19
+]드렸잖아요, 탐정님!

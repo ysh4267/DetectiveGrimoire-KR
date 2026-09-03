@@ -1,0 +1,30 @@
+[
+xmin -8567
+ymin 172
+xmax 6812
+ymax 1968
+translatex -10346
+][
+font 17
+height 740
+color #ffffff
+x 2086
+y 740
+spacing " " 16
+spacingpair "우" "선" 138
+spacingpair "선" " " 138
+spacingpair "이" "것" 138
+spacingpair "것" "부" 138
+spacingpair "부" "터" 138
+spacingpair "터" " " 138
+]우선 이것부터 [
+x 2407
+y 1740
+spacingpair "읽" "어" 138
+spacingpair "어" " " 138
+spacingpair " " "보" 16
+spacingpair "보" "세" 138
+spacingpair "세" "요" 138
+spacingpair "요" "." 138
+spacingpair "." "" 89
+]읽어 보세요.

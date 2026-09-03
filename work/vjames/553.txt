@@ -1,0 +1,25 @@
+[
+xmin -9135
+ymin 167
+xmax 7663
+ymax 961
+translatex -10346
+][
+font 17
+height 584
+letterspacing 14
+color #ffffff
+x 1180
+y 740
+spacingpair "감" "이" 99
+spacingpair "이" " " 99
+spacingpair "좀" " " 99
+spacingpair "무" "뎌" 99
+spacingpair "뎌" "지" 99
+spacingpair "지" "셨" 99
+spacingpair "셨" "나" 99
+spacingpair "나" " " 99
+spacingpair "봐" "요" 99
+spacingpair "요" "?" 99
+spacingpair "?" "" 22
+]감이 좀 무뎌지셨나 봐요?

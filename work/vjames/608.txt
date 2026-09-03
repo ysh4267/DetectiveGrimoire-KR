@@ -1,0 +1,30 @@
+[
+xmin -9148
+ymin 173
+xmax 6870
+ymax 1785
+translatex -10346
+][
+font 17
+height 740
+letterspacing 89
+color #ffffff
+x 2869
+y 740
+spacingpair "방" "향" 49
+spacingpair "향" "을" 49
+spacingpair "을" " " 49
+spacingpair " " "" -73
+]...방향을 [
+letterspacing 0
+x 2071
+y 1740
+spacingpair "고" "르" 138
+spacingpair "르" "시" 138
+spacingpair "시" "면" 138
+spacingpair "면" " " 138
+spacingpair " " "돼" 16
+spacingpair "돼" "요" 138
+spacingpair "요" "." 138
+spacingpair "." "" 89
+]고르시면 돼요.

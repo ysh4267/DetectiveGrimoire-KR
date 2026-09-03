@@ -1,0 +1,23 @@
+[
+xmin -9326
+ymin 141
+xmax 6376
+ymax 1963
+translatex -10346
+][
+font 17
+height 740
+color #ffffff
+x 2785
+y 740
+spacing " " 16
+spacingpair "꽤" " " 138
+spacingpair "정" "확" 138
+spacingpair "확" "한" 138
+spacingpair "한" " " 138
+]꽤 정확한 [
+letterspacing 138
+x 2492
+y 1740
+spacingpair "." "" -49
+]표현이네요.

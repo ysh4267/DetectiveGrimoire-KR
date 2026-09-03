@@ -1,0 +1,62 @@
+[
+xmin -10011
+ymin 167
+xmax 7827
+ymax 3974
+translatex -10346
+][
+font 17
+height 740
+letterspacing 16
+color #ffffff
+x 1095
+y 740
+spacing "." 73
+spacingpair "알" "겠" 122
+spacingpair "겠" "어" 122
+spacingpair "어" "." 122
+spacingpair "6" "0" 84
+spacingpair "0" "살" 84
+spacingpair "살" " " 122
+spacingpair "먹" "은" 122
+spacingpair "은" " " 122
+]알겠어... 60살 먹은 [
+letterspacing 0
+x 1225
+y 1740
+spacing "이" 138
+spacing " " 16
+spacingpair "외" "계" 138
+spacingpair "계" "인" 138
+spacingpair "인" "이" 138
+spacingpair "라" " " 138
+spacingpair "거" "지" 138
+spacingpair "지" "." 138
+spacingpair "." " " 89
+]외계인이라 이거지. [
+letterspacing 16
+x 1262
+y 2760
+spacingpair "그" "게" 122
+spacingpair "게" " " 122
+spacingpair "왜" " " 122
+spacingpair "중" "요" 122
+spacingpair "요" "한" 122
+spacingpair "한" "지" 122
+spacingpair "지" "는" 122
+spacingpair "는" " " 122
+]그게 왜 중요한지는 [
+letterspacing 0
+x 1052
+y 3760
+spacing "." 89
+spacingpair "여" "전" 138
+spacingpair "전" "히" 138
+spacingpair "히" " " 138
+spacingpair " " "모" 16
+spacingpair "모" "르" 138
+spacingpair "르" "겠" 138
+spacingpair "겠" "지" 138
+spacingpair "지" "만" 138
+spacingpair "만" "." 138
+]여전히 모르겠지만...

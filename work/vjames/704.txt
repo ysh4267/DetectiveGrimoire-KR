@@ -1,0 +1,51 @@
+[
+xmin -8612
+ymin 141
+xmax 7118
+ymax 3974
+translatex -10346
+][
+font 17
+height 647
+color #ffffff
+x 1734
+y 740
+spacing " " 16
+spacingpair "완" "벽" 126
+spacingpair "벽" "하" 126
+spacingpair "하" "게" 126
+spacingpair "게" " " 126
+spacingpair "관" "리" 126
+spacingpair "리" "되" 126
+spacingpair "되" "고" 126
+spacingpair "고" " " 126
+]완벽하게 관리되고 [
+x 2936
+y 1740
+spacingpair "있" "다" 126
+spacingpair "다" "고" 126
+spacingpair "고" "요" 126
+spacingpair "요" "!" 126
+spacingpair "!" " " 20
+spacingpair " " "" 16
+]있다고요! [
+letterspacing 16
+x 2462
+y 2760
+spacingpair "손" "질" 110
+spacingpair "질" " " 110
+spacingpair "끝" "," 110
+spacingpair "," " " 63
+spacingpair "출" "동" 110
+spacingpair "동" " " 110
+]손질 끝, 출동 [
+letterspacing 0
+x 2936
+y 3760
+spacingpair "준" "비" 126
+spacingpair "비" " " 126
+spacingpair " " "완" 16
+spacingpair "완" "료" 126
+spacingpair "료" "!" 126
+spacingpair "!" "" 20
+]준비 완료!

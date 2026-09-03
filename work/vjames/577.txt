@@ -1,0 +1,57 @@
+[
+xmin -10005
+ymin 167
+xmax 7671
+ymax 3977
+translatex -10346
+][
+font 17
+height 740
+letterspacing 16
+color #ffffff
+x 1637
+y 740
+spacingpair "처" "음" 122
+spacingpair "음" "엔" 122
+spacingpair "엔" " " 122
+spacingpair "안" " " 122
+spacingpair "열" "리" 122
+spacingpair "리" "는" 122
+spacingpair "는" " " 122
+]처음엔 안 열리는 [
+letterspacing 0
+x 1958
+y 1740
+spacing " " 16
+spacingpair "주" "제" 138
+spacingpair "제" "도" 138
+spacingpair "도" " " 138
+spacingpair "있" "으" 138
+spacingpair "으" "니" 138
+spacingpair "니" "," 138
+spacingpair "," " " 89
+]주제도 있으니, [
+letterspacing 16
+x 1280
+y 2760
+spacingpair "용" "의" 122
+spacingpair "의" "자" 122
+spacingpair "자" "마" 122
+spacingpair "마" "다" 122
+spacingpair "다" " " 122
+spacingpair "여" "러" 122
+spacingpair "러" " " 122
+spacingpair "번" " " 122
+]용의자마다 여러 번 [
+x 1243
+y 3760
+spacingpair "찾" "아" 122
+spacingpair "아" "가" 122
+spacingpair "가" " " 122
+spacingpair "보" "셔" 122
+spacingpair "셔" "야" 122
+spacingpair "야" " " 122
+spacingpair "해" "요" 122
+spacingpair "요" "." 122
+spacingpair "." "" 73
+]찾아가 보셔야 해요.

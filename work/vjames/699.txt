@@ -1,0 +1,40 @@
+[
+xmin -9600
+ymin 172
+xmax 6904
+ymax 2967
+translatex -10346
+][
+font 17
+height 740
+letterspacing 16
+color #ffffff
+x 1977
+y 740
+spacingpair "그" "거" 122
+spacingpair "거" " " 122
+spacingpair "볼" " " 122
+spacingpair "때" "마" 122
+spacingpair "마" "다" 122
+spacingpair "다" " " 122
+]그거 볼 때마다 [
+letterspacing 0
+x 2078
+y 1740
+spacing "점" 138
+spacing " " 16
+spacingpair "길" "어" 138
+spacingpair "어" "지" 138
+spacingpair "지" "는" 138
+spacingpair "는" " " 138
+]점점 길어지는 [
+x 2125
+y 2760
+spacing "." 89
+spacingpair "것" " " 138
+spacingpair " " "같" 16
+spacingpair "같" "은" 138
+spacingpair "은" "데" 138
+spacingpair "데" "요" 138
+spacingpair "요" "." 138
+]것 같은데요...

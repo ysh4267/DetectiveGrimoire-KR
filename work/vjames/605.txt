@@ -1,0 +1,33 @@
+[
+xmin -8797
+ymin 141
+xmax 7253
+ymax 1968
+translatex -10346
+][
+font 17
+height 740
+letterspacing 16
+color #ffffff
+x 1612
+y 740
+spacing "모" 122
+spacingpair "두" "한" 122
+spacingpair "한" "테" 122
+spacingpair "테" " " 122
+spacingpair "든" " " 122
+spacingpair "걸" " " 122
+]모두한테 모든 걸 [
+letterspacing 0
+x 1677
+y 1740
+spacingpair "물" "어" 138
+spacingpair "어" "보" 138
+spacingpair "보" "라" 138
+spacingpair "라" "는" 138
+spacingpair "는" " " 138
+spacingpair " " "거" 16
+spacingpair "거" "군" 138
+spacingpair "군" "." 138
+spacingpair "." "" 89
+]물어보라는 거군.

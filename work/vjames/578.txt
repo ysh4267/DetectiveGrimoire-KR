@@ -1,0 +1,22 @@
+[
+xmin -8915
+ymin 172
+xmax 7421
+ymax 953
+translatex -10346
+][
+font 17
+height 740
+letterspacing 16
+color #ffffff
+x 1400
+y 740
+spacing "꼼" 122
+spacingpair "제" " " 122
+spacingpair "조" "언" 122
+spacingpair "언" "은" 122
+spacingpair "은" "," 122
+spacingpair "," " " 73
+spacingpair "히" "-" 122
+spacingpair "-" "" 45
+]제 조언은, 꼼꼼히-

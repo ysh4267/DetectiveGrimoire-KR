@@ -1,0 +1,22 @@
+[
+xmin -8948
+ymin 145
+xmax 7422
+ymax 778
+translatex -10346
+][
+font 17
+height 662
+letterspacing 15
+color #ffffff
+x 1360
+y 740
+spacing "나" 111
+spacing "어" 111
+spacingpair "-" "나" 40
+spacingpair "도" " " 111
+spacingpair "들" "어" 111
+spacingpair "는" " " 111
+spacingpair "봤" "어" 111
+spacingpair "!" "" 3
+]나-나도 들어는 봤어!

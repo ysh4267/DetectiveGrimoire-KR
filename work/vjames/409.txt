@@ -1,0 +1,30 @@
+[
+xmin -8316
+ymin 145
+xmax 6843
+ymax 1785
+translatex -10346
+][
+font 17
+height 737
+color #ffffff
+x 2131
+y 740
+spacing """ 56
+spacing " " 20
+spacingpair "보" "기" 151
+spacingpair "기" "의" 151
+spacingpair "의" " " 151
+spacingpair "늪" """ 151
+spacingpair "?" " " 52
+]"보기의 늪"? [
+letterspacing 20
+x 2029
+y 1740
+spacing "." 73
+spacingpair "이" "름" 131
+spacingpair "름" " " 131
+spacingpair "한" "번" 131
+spacingpair "번" " " 131
+spacingpair "참" "." 131
+]이름 한번 참...

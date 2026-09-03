@@ -1,0 +1,22 @@
+[
+xmin -9636
+ymin 141
+xmax 7196
+ymax 956
+translatex -10346
+][
+font 17
+height 740
+letterspacing 16
+color #ffffff
+x 660
+y 740
+spacing "." 73
+spacingpair "늪" " " 122
+spacingpair "자" "체" 122
+spacingpair "체" "도" 122
+spacingpair "도" " " 122
+spacingpair "함" "께" 122
+spacingpair "께" "요" 122
+spacingpair "요" "." 122
+]...늪 자체도 함께요.

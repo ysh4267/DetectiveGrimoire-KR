@@ -1,0 +1,22 @@
+[
+xmin -9674
+ymin 173
+xmax 6421
+ymax 956
+translatex -10346
+][
+font 17
+height 740
+color #ffffff
+x 660
+y 740
+spacing "." 89
+spacingpair "살" "인" 138
+spacingpair "인" " " 138
+spacingpair " " "용" 16
+spacingpair "용" "의" 138
+spacingpair "의" "자" 138
+spacingpair "자" "가" 138
+spacingpair "가" "." 138
+spacingpair "?" "" 44
+]살인 용의자가...?

@@ -140,6 +140,107 @@ def text_width(text, height_twips):
 
 MIN_SCALE = 0.72
 
+# Minimum breathing room between two baselines, as a fraction of the lower
+# line's em.
+LINE_GAP = 0.06
+
+_vext = {}
+
+
+def char_extent(ch):
+    """(yMax, -yMin) of one character, in em. Cached."""
+    if ch in _vext:
+        return _vext[ch]
+    m = _metrics()
+    from fontTools.ttLib import TTFont
+    if 'glyf' not in _fontmetrics:
+        f = TTFont(BASE_FONT)
+        _fontmetrics['glyf'] = f['glyf']
+        _fontmetrics['font'] = f
+    glyf = _fontmetrics['glyf']
+    g = m['cmap'].get(ord(ch))
+    res = (0.0, 0.0)
+    if g:
+        gl = glyf[g]
+        if gl.numberOfContours:
+            gl.recalcBounds(glyf)
+            res = (gl.yMax / m['upem'], -gl.yMin / m['upem'])
+    _vext[ch] = res
+    return res
+
+
+def line_extent(text):
+    """(ascent, descent) above/below the baseline for a whole line, in em.
+
+    Hangul reaches -0.090..+0.843 em where Latin caps stop at +0.754, so a
+    line spacing laid out for English collides once the text is Korean.
+    """
+    asc = desc = 0.0
+    for ch in text:
+        if ch.isspace():
+            continue
+        a, d = char_extent(ch)
+        asc = max(asc, a)
+        desc = max(desc, d)
+    return asc, desc
+
+
+def vfit_scale(parsed, lines):
+    """Largest scale that stops Korean lines colliding vertically.
+
+    The measure is growth relative to the English that was there, not an
+    absolute fit: several credit rows set 1080-twip text on 680 twips of
+    leading, so line 2's ascenders were always meant to sit beside line 1's
+    descenders. Judging those against an absolute rule shrinks untouched Latin
+    names to the floor for no reason. Only the extra height Hangul brings
+    (+0.843/-0.090 em against Latin caps at +0.754) is corrected for.
+    """
+    groups = record_lines(parsed)
+    if len(groups) < 2:
+        return 1.0
+
+    recs = parsed['records']
+    ys, hs = [], []
+    y = h = None
+    for g in groups:
+        gh = None
+        for i in g:
+            v = ffdectext.get_param(recs[i]['params'], 'y')
+            if v:
+                y = int(v)
+            v = ffdectext.get_param(recs[i]['params'], 'height')
+            if v:
+                h = int(v)
+            gh = h if gh is None else max(gh, h or 0)
+        ys.append(y)
+        hs.append(gh)
+
+    def need(upper, lower, k):
+        return (line_extent(lower)[0] * hs[k]
+                + line_extent(upper)[1] * hs[k - 1]
+                + LINE_GAP * hs[k])
+
+    scale = 1.0
+    for k in range(1, len(groups)):
+        if None in (ys[k], ys[k - 1], hs[k], hs[k - 1]):
+            continue
+        iu, il = groups[k - 1][0], groups[k][0]
+        upper = lines[iu] if iu < len(lines) else ''
+        lower = lines[il] if il < len(lines) else ''
+        if not upper.strip() or not lower.strip():
+            continue
+        dy = ys[k] - ys[k - 1]
+        if dy <= 0:
+            continue
+        want = need(upper, lower, k)
+        # what the English in this slot already asked for -- anything the
+        # original tolerated, the translation may tolerate too
+        had = need(recs[iu]['text'], recs[il]['text'], k)
+        budget = max(dy, had)
+        if want > budget:
+            scale = min(scale, budget / want)
+    return max(MIN_SCALE, scale)
+
 
 def fit_scale(parsed, lines):
     """Largest uniform font scale (<=1) that keeps every line inside the
@@ -332,7 +433,7 @@ def patch(key, translations, outdir, verbose=True, extra_chars=''):
 
         charset.update(''.join(new_lines))
 
-        scale = fit_scale(parsed, new_lines)
+        scale = min(fit_scale(parsed, new_lines), vfit_scale(parsed, new_lines))
         if scale < 0.999:
             n_scaled += 1
             for rec, p in zip(parsed['records'], apply_scale(parsed, scale)):

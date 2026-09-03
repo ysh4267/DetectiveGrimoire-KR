@@ -1,0 +1,42 @@
+[
+xmin -9989
+ymin 145
+xmax 7631
+ymax 2975
+translatex -10346
+][
+font 17
+height 740
+color #ffffff
+x 1275
+y 740
+spacing """ 47
+spacing " " 16
+spacingpair "보" "기" 138
+spacingpair "기" "의" 138
+spacingpair "의" " " 138
+spacingpair "늪" """ 138
+spacingpair "이" "라" 138
+spacingpair "라" "는" 138
+spacingpair "는" " " 138
+]"보기의 늪"이라는 [
+x 2447
+y 1740
+spacing " " 16
+spacingpair "관" "광" 138
+spacingpair "광" " " 138
+spacingpair "명" "소" 138
+spacingpair "소" "에" 138
+spacingpair "에" " " 138
+]관광 명소에 [
+x 2054
+y 2760
+spacingpair "도" "착" 138
+spacingpair "착" "한" 138
+spacingpair "한" " " 138
+spacingpair " " "거" 16
+spacingpair "거" "예" 138
+spacingpair "예" "요" 138
+spacingpair "요" "." 138
+spacingpair "." "" 89
+]도착한 거예요.

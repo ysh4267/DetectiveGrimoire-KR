@@ -1,0 +1,56 @@
+[
+xmin -9636
+ymin 145
+xmax 8002
+ymax 3800
+translatex -10346
+][
+font 17
+height 740
+letterspacing 16
+color #ffffff
+x 2004
+y 740
+spacingpair "관" "심" 122
+spacingpair "심" " " 122
+spacingpair "있" "을" 122
+spacingpair "을" " " 122
+spacingpair "만" "한" 122
+spacingpair "한" " " 122
+]관심 있을 만한 [
+x 933
+y 1740
+spacingpair "사" "람" 122
+spacingpair "람" "에" 122
+spacingpair "에" "게" 122
+spacingpair "게" " " 122
+spacingpair "인" "물" 122
+spacingpair "물" " " 122
+spacingpair "정" "보" 122
+spacingpair "보" "나" 122
+spacingpair "나" " " 122
+]사람에게 인물 정보나 [
+letterspacing 0
+x 1748
+y 2760
+spacing " " 16
+spacingpair "단" "서" 138
+spacingpair "서" "를" 138
+spacingpair "를" " " 138
+spacingpair "제" "시" 138
+spacingpair "시" "하" 138
+spacingpair "하" "는" 138
+spacingpair "는" " " 138
+]단서를 제시하는 [
+letterspacing 16
+x 1337
+y 3760
+spacing "." 73
+spacingpair "것" "도" 122
+spacingpair "도" " " 122
+spacingpair "잊" "지" 122
+spacingpair "지" " " 122
+spacingpair "마" "세" 122
+spacingpair "세" "요" 122
+spacingpair "요" "." 122
+]것도 잊지 마세요...

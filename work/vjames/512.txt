@@ -1,0 +1,36 @@
+[
+xmin -9458
+ymin 145
+xmax 6842
+ymax 2975
+translatex -10346
+][
+font 17
+height 740
+color #ffffff
+x 2686
+y 740
+spacing "." 89
+spacing " " 16
+spacingpair "나" "." 138
+spacingpair "뭘" " " 138
+]나...... 뭘 [
+x 2793
+y 1740
+spacing " " 16
+spacingpair "해" "야" 138
+spacingpair "야" " " 138
+spacingpair "하" "는" 138
+spacingpair "는" " " 138
+]해야 하는 [
+x 2043
+y 2760
+spacingpair "건" "지" 138
+spacingpair "지" " " 138
+spacingpair " " "모" 16
+spacingpair "모" "르" 138
+spacingpair "르" "겠" 138
+spacingpair "겠" "어" 138
+spacingpair "어" "." 138
+spacingpair "." "" 89
+]건지 모르겠어.

@@ -1,0 +1,24 @@
+[
+xmin -9405
+ymin 145
+xmax 7926
+ymax 961
+translatex -10346
+][
+font 17
+height 680
+letterspacing 15
+color #ffffff
+x 880
+y 740
+spacing "." 67
+spacing "그" 112
+spacingpair "래" "," 112
+spacingpair "," " " 67
+spacingpair "게" " " 112
+spacingpair "보" "기" 112
+spacingpair "기" "인" 112
+spacingpair "인" "가" 112
+spacingpair "가" "?" 112
+spacingpair "?" "" 25
+]...그래, 그게 보기인가?

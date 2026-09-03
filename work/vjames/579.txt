@@ -1,0 +1,33 @@
+[
+xmin -8727
+ymin 166
+xmax 6607
+ymax 2975
+translatex -10346
+][
+font 17
+height 740
+color #ffffff
+x 2288
+y 740
+spacing "꼼" 138
+spacing " " 16
+spacingpair "-" "꼼" 61
+spacingpair "히" " " 138
+spacingpair "하" "면" 138
+spacingpair "면" " " 138
+]-꼼꼼히 하면 [
+x 2662
+y 1740
+spacing " " 16
+spacingpair "후" "회" 138
+spacingpair "회" " " 138
+spacingpair "없" "다" 138
+spacingpair "다" "." 138
+spacingpair "." " " 89
+]후회 없다. [
+letterspacing 138
+x 2863
+y 2760
+spacingpair "." "" -49
+]알았다고.

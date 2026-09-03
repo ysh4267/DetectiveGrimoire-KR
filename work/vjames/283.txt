@@ -1,0 +1,15 @@
+[
+xmin -7320
+ymin 174
+xmax 5888
+ymax 779
+translatex -10346
+][
+font 17
+height 533
+letterspacing 110
+color #ffffff
+x 2980
+y 740
+spacingpair "?" "" -72
+]유명하다고?

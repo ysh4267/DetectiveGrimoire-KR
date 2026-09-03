@@ -1,0 +1,33 @@
+[
+xmin -9375
+ymin 173
+xmax 7324
+ymax 1785
+translatex -10346
+][
+font 17
+height 740
+letterspacing 16
+color #ffffff
+x 1979
+y 740
+spacingpair "그" " " 122
+spacingpair "유" "치" 122
+spacingpair "치" "한" 122
+spacingpair "한" " " 122
+spacingpair "만" "화" 122
+spacingpair "화" " " 122
+]그 유치한 만화 [
+letterspacing 0
+x 1563
+y 1740
+spacing "." 89
+spacingpair "캐" "릭" 138
+spacingpair "릭" "터" 138
+spacingpair "터" " " 138
+spacingpair " " "말" 16
+spacingpair "말" "이" 138
+spacingpair "이" "야" 138
+spacingpair "야" "." 138
+spacingpair "?" "" 44
+]캐릭터 말이야...?

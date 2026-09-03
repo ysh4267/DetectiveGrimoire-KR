@@ -6,16 +6,16 @@ chalgames__sally                         fonts=[4]            chars=134   transl
 chalgames__vanDePeer                     fonts=[48]           chars=147   translated=2    scaled=1    adv=56     missing=0
 chalgames__weybridge                     fonts=[2]            chars=128   translated=1    scaled=0    adv=20     missing=0
 menus__AreaNotesGraphic                  fonts=[121, 140]     chars=384   translated=51   scaled=0    adv=1488   missing=0
-menus__ClueGraphic                       fonts=[115, 238, 265] chars=505   translated=131  scaled=18   adv=3208   missing=0
+menus__ClueGraphic                       fonts=[115, 238, 265] chars=505   translated=131  scaled=25   adv=3208   missing=0
 menus__DialogueBoxGraphic                fonts=[165, 168]     chars=370   translated=6    scaled=4    adv=12     missing=0
 menus__HeadphonesGraphic                 fonts=[21]           chars=136   translated=2    scaled=1    adv=24     missing=0
 menus__MainMenuGraphic                   fonts=[244]          chars=309   translated=22   scaled=12   adv=659    missing=0
 menus__MapGraphic                        fonts=[6, 11]        chars=389   translated=8    scaled=2    adv=167    missing=0
-menus__OptionsGraphic                    fonts=[6, 61]        chars=184   translated=12   scaled=2    adv=156    missing=0
+menus__OptionsGraphic                    fonts=[6, 61]        chars=184   translated=12   scaled=3    adv=156    missing=0
 menus__ProfileGraphic                    fonts=[149, 185]     chars=475   translated=110  scaled=41   adv=2275   missing=0
 menus__ProfileSelectGraphic              fonts=[154]          chars=117   translated=0    scaled=18   adv=18     missing=0
-menus__TitleScreenGraphic                fonts=[37, 375, 589] chars=221   translated=95   scaled=118  adv=1350   missing=0
-minds__MindsGraphic                      fonts=[16, 81]       chars=472   translated=114  scaled=18   adv=1829   missing=0
+menus__TitleScreenGraphic                fonts=[37, 375, 589] chars=221   translated=95   scaled=119  adv=1350   missing=0
+minds__MindsGraphic                      fonts=[16, 81]       chars=472   translated=114  scaled=40   adv=1829   missing=0
 minigames__BinMinigameGraphic            fonts=[2, 12]        chars=212   translated=29   scaled=14   adv=283    missing=0
 minigames__ChemMinigameGraphic           fonts=[2, 12, 203]   chars=227   translated=36   scaled=13   adv=328    missing=0
 minigames__CogsMinigameGraphic           fonts=[2, 12]        chars=212   translated=29   scaled=14   adv=283    missing=0
@@ -32,10 +32,10 @@ minigames__ReedsMinigameGraphic          fonts=[2, 12]        chars=216   transl
 minigames__SoundMinigameGraphic          fonts=[51, 89]       chars=216   translated=29   scaled=12   adv=290    missing=0
 sideInfo__SideInfo                       fonts=[24]           chars=117   translated=0    scaled=17   adv=16     missing=0
 talk__TalkingTreeGraphic                 fonts=[225]          chars=202   translated=14   scaled=4    adv=266    missing=0
-talk__burle                              fonts=[17, 638]      chars=451   translated=149  scaled=31   adv=2844   missing=0
+talk__burle                              fonts=[17, 638]      chars=451   translated=149  scaled=32   adv=2844   missing=0
 talk__echo                               fonts=[18]           chars=540   translated=210  scaled=57   adv=4180   missing=0
-talk__folder                             fonts=[19, 737]      chars=521   translated=199  scaled=48   adv=4056   missing=0
-talk__grimoire                           fonts=[17, 279, 974] chars=530   translated=230  scaled=68   adv=4206   missing=0
+talk__folder                             fonts=[19, 737]      chars=521   translated=199  scaled=49   adv=4056   missing=0
+talk__grimoire                           fonts=[17, 279, 974] chars=530   translated=230  scaled=69   adv=4206   missing=0
 talk__harper                             fonts=[17]           chars=497   translated=189  scaled=69   adv=3541   missing=0
 talk__james                              fonts=[17]           chars=394   translated=84   scaled=24   adv=1683   missing=0
 talk__littleGirl                         fonts=[17]           chars=363   translated=86   scaled=17   adv=1579   missing=0

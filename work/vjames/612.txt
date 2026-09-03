@@ -1,0 +1,55 @@
+[
+xmin -10169
+ymin 145
+xmax 7324
+ymax 3977
+translatex -10346
+][
+font 17
+height 740
+letterspacing 16
+color #ffffff
+x 1630
+y 740
+spacingpair "그" "게" 122
+spacingpair "게" " " 122
+spacingpair "제" "일" 122
+spacingpair "일" " " 122
+spacingpair "중" "요" 122
+spacingpair "요" "한" 122
+spacingpair "한" " " 122
+]그게 제일 중요한 [
+letterspacing 0
+x 1577
+y 1740
+spacing " " 16
+spacingpair "버" "튼" 138
+spacingpair "튼" "이" 138
+spacingpair "이" "에" 138
+spacingpair "에" "요" 138
+spacingpair "요" "!" 138
+spacingpair "!" " " 19
+spacingpair "사" "건" 138
+spacingpair "건" " " 138
+]버튼이에요! 사건 [
+x 1951
+y 2760
+spacing " " 16
+spacingpair "파" "일" 138
+spacingpair "일" "이" 138
+spacingpair "이" " " 138
+spacingpair "열" "리" 138
+spacingpair "리" "죠" 138
+spacingpair "죠" "." 138
+spacingpair "." " " 89
+]파일이 열리죠. [
+x 2392
+y 3760
+spacingpair "거" "기" 138
+spacingpair "기" "에" 138
+spacingpair "에" " " 138
+spacingpair " " "전" 16
+spacingpair "전" "부" 138
+spacingpair "부" "-" 138
+spacingpair "-" "" 61
+]거기에 전부-

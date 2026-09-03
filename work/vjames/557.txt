@@ -1,0 +1,23 @@
+[
+xmin -8718
+ymin 145
+xmax 8027
+ymax 961
+translatex -10346
+][
+font 17
+height 715
+letterspacing 19
+color #ffffff
+x 1620
+y 740
+spacingpair "후" "회" 127
+spacingpair "회" " " 127
+spacingpair "안" " " 127
+spacingpair "하" "실" 127
+spacingpair "실" " " 127
+spacingpair "거" "예" 127
+spacingpair "예" "요" 127
+spacingpair "요" "." 127
+spacingpair "." "" 71
+]후회 안 하실 거예요.

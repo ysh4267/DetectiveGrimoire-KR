@@ -1,0 +1,25 @@
+[
+xmin -8947
+ymin 145
+xmax 8251
+ymax 779
+translatex -10346
+][
+font 17
+height 652
+letterspacing 17
+color #ffffff
+x 1360
+y 740
+spacingpair "이" " " 114
+spacingpair "배" " " 114
+spacingpair "안" "," 114
+spacingpair "," " " 64
+spacingpair "진" "짜" 114
+spacingpair "짜" " " 114
+spacingpair "춥" "다" 114
+spacingpair "다" "고" 114
+spacingpair "고" "요" 114
+spacingpair "요" "." 114
+spacingpair "." "" 64
+]이 배 안, 진짜 춥다고요.

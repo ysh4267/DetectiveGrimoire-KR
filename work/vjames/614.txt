@@ -1,0 +1,39 @@
+[
+xmin -10260
+ymin 172
+xmax 6863
+ymax 2791
+translatex -10346
+][
+font 17
+height 740
+color #ffffff
+x 3135
+y 740
+spacingpair "용" "의" 138
+spacingpair "의" "자" 138
+spacingpair "자" "," 138
+spacingpair "," " " 89
+spacingpair " " "" 16
+]용의자, [
+x 2321
+y 1740
+spacing " " 16
+spacingpair "단" "서" 138
+spacingpair "서" "," 138
+spacingpair "," " " 89
+spacingpair "다" "녀" 138
+spacingpair "녀" "온" 138
+spacingpair "온" " " 138
+]단서, 다녀온 [
+x 2064
+y 2760
+spacingpair "장" "소" 138
+spacingpair "소" "까" 138
+spacingpair "까" "지" 138
+spacingpair "지" " " 138
+spacingpair " " "전" 16
+spacingpair "전" "부" 138
+spacingpair "부" "." 138
+spacingpair "." "" 89
+]장소까지 전부.

@@ -1,0 +1,44 @@
+[
+xmin -10152
+ymin 141
+xmax 8165
+ymax 2792
+translatex -10346
+][
+font 17
+height 740
+letterspacing 16
+color #ffffff
+x 1977
+y 740
+spacingpair "다" "음" 122
+spacingpair "음" "에" 122
+spacingpair "에" " " 122
+spacingpair "뭘" " " 122
+spacingpair "할" "지" 122
+spacingpair "지" " " 122
+]다음에 뭘 할지 [
+x 1162
+y 1740
+spacingpair "정" "하" 122
+spacingpair "하" "는" 122
+spacingpair "는" " " 122
+spacingpair "데" " " 122
+spacingpair "도" "움" 122
+spacingpair "움" "이" 122
+spacingpair "이" " " 122
+spacingpair "될" " " 122
+]정하는 데 도움이 될 [
+x 716
+y 2760
+spacing "요" 122
+spacingpair "거" "예" 122
+spacingpair "예" "요" 122
+spacingpair "." " " 73
+spacingpair "행" "운" 122
+spacingpair "운" "을" 122
+spacingpair "을" " " 122
+spacingpair "빌" "어" 122
+spacingpair "어" "요" 122
+spacingpair "!" "" 3
+]거예요. 행운을 빌어요!

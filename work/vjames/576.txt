@@ -1,0 +1,41 @@
+[
+xmin -9184
+ymin 141
+xmax 7620
+ymax 2970
+translatex -10346
+][
+font 17
+height 740
+letterspacing 16
+color #ffffff
+x 1622
+y 740
+spacingpair "그" "러" 122
+spacingpair "러" "다" 122
+spacingpair "다" " " 122
+spacingpair "보" "면" 122
+spacingpair "면" " " 122
+spacingpair "대" "화" 122
+spacingpair "화" " " 122
+]그러다 보면 대화 [
+x 1265
+y 1740
+spacingpair "주" "제" 122
+spacingpair "제" " " 122
+spacingpair "목" "록" 122
+spacingpair "록" "에" 122
+spacingpair "에" "서" 122
+spacingpair "서" " " 122
+spacingpair "고" "를" 122
+spacingpair "를" " " 122
+]주제 목록에서 고를 [
+x 2026
+y 2760
+spacing "." 73
+spacingpair "수" " " 122
+spacingpair "있" "게" 122
+spacingpair "게" " " 122
+spacingpair "되" "죠" 122
+spacingpair "죠" "." 122
+]수 있게 되죠...

@@ -1,0 +1,24 @@
+[
+xmin -10110
+ymin 141
+xmax 8036
+ymax 956
+translatex -10346
+][
+font 17
+height 740
+letterspacing 16
+color #ffffff
+x 180
+y 740
+spacing "아" 122
+spacingpair "까" " " 122
+spacingpair "다" " " 122
+spacingpair "설" "명" 122
+spacingpair "명" "드" 122
+spacingpair "드" "렸" 122
+spacingpair "렸" "잖" 122
+spacingpair "잖" "아" 122
+spacingpair "요" "." 122
+spacingpair "." "" 73
+]아까 다 설명드렸잖아요.

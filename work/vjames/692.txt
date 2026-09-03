@@ -1,0 +1,15 @@
+[
+xmin -7174
+ymin 141
+xmax 5596
+ymax 953
+translatex -10346
+][
+font 17
+height 740
+letterspacing 138
+color #ffffff
+x 3140
+y 740
+spacingpair "." "" -49
+]그렇죠.

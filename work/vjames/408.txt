@@ -1,0 +1,39 @@
+[
+xmin -9117
+ymin 173
+xmax 6740
+ymax 3800
+translatex -10346
+][
+font 17
+height 740
+letterspacing 89
+color #ffffff
+x 3553
+y 740
+spacingpair "이" "." 49
+spacingpair " " "" -73
+]이... [
+letterspacing 0
+x 2509
+y 1740
+spacing "." 89
+spacing " " 16
+spacingpair "어" "." 138
+spacingpair """ "관" 47
+spacingpair "관" "광" 138
+spacingpair "광" " " 138
+]어... "관광 [
+x 3021
+y 2760
+spacingpair "명" "소" 138
+spacingpair "소" """ 138
+spacingpair """ "의" 47
+spacingpair "의" " " 138
+spacingpair " " "" 16
+]명소"의 [
+letterspacing 138
+x 2142
+y 3760
+spacingpair "." "" -49
+]책임자였어요.
