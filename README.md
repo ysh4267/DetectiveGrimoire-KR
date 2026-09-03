@@ -1,237 +1,203 @@
 # Detective Grimoire 한글패치
 
-Steam판 **Detective Grimoire** (SFB Games, 2014 / Adobe AIR)의 한국어 패치와
-그 패치를 만들어내는 도구 모음입니다.
+Steam판 **Detective Grimoire** (SFB Games, 2014) 의 한국어 패치입니다.
+대사·단서·인물 정보·메뉴까지 **3,278개 텍스트, 21,144단어**를 번역했습니다.
 
-## 게임이 텍스트를 저장하는 방식
+> ⚠️ 게임을 **정식 구매**하신 분만 사용하실 수 있습니다.
+> 이 저장소에는 게임 파일이 들어 있지 않습니다. 패치는 원본과의 *차이*만
+> 담고 있어서, 게임이 없으면 아무 소용이 없습니다.
 
-리버스 엔지니어링으로 확인한 구조입니다.
+---
 
-| 위치 | 내용 | 분량 |
-|---|---|---|
-| `assets/swf-dsk/**/*.swf` 의 **DefineText** 태그 | 화면에 보이는 거의 모든 대사·단서·메뉴 | 3,278 태그 / 21,144 단어 |
-| 메인 SWF `DetectiveGrimoireDesktopSteam.swf` 의 **ABC 상수 풀** | 추리 미니게임 문장 조각, 확인 대화상자 | 103 문자열 |
-| 각 SWF 의 **DefineFont2/3** | 서브셋된 임베드 폰트 (원문에 쓰인 글자만 포함) | SWF당 1~3개 |
-| 일부 UI (`SLOT`, `TAP TO CREATE NEW SAVE FILE` 등) | **벡터 도형으로 그려진 그림** | 번역 불가 |
+## 설치
 
-`assets/xml/` 은 TexturePacker 아틀라스이고, `assets/mp3/` 파일명은 음성 클립
-ID입니다. 둘 다 화면 텍스트를 담고 있지 않습니다.
+1. [Releases](../../releases) 에서 `DetectiveGrimoire-KR-Patch.exe` 를 받습니다.
+2. **게임 폴더**에 넣습니다. `Detective Grimoire.exe` 가 있는 그 폴더입니다.
+   - Steam → 라이브러리 → Detective Grimoire 우클릭 → **관리 → 로컬 파일 보기**
+   - 보통 `...\steamapps\common\Detective Grimoire\`
+3. 받은 exe 를 **실행**하고 `1` 을 누릅니다.
 
-### AIR 무결성
-
-`META-INF/signatures.xml` 이 에셋 949개를 포함해 서명하고 있지만, 캡티브 런타임
-빌드는 실행 시 이를 검증하지 않습니다. 에셋 SWF를 수정한 뒤 정상 실행되는 것을
-확인했습니다.
-
-## 패치 파이프라인
+끝입니다. 게임을 켜면 한국어로 나옵니다.
 
 ```
-원본 SWF
-   │
-   ├─ FFDec -export text  ──►  work/text_raw/**/texts/*.txt   (text:formatted)
-   │                              └─ 번역 청크 work/chunks/*.json
-   │                                    └─ 번역 결과 work/ko/*.json
-   │
-   ├─ 한글 글자 집합 계산 ──►  Noto Sans KR Bold 서브셋 TTF  (윤곽 겹침 제거된 것)
-   ├─ FFDec -replace <fontId> <ttf>          (임베드 폰트 전량 교체)
-   ├─ FFDec -importText                      (한국어 DefineText 주입)
-   └─ fixadvances.py                         (글리프 어드밴스 실측값으로 재작성 + 자간)
-             │
-             └──►  dist/assets/swf-dsk/**/*.swf
+==========================================================
+  Detective Grimoire 한글패치
+==========================================================
 
-메인 SWF ── ABC 상수 풀 문자열 교체 (work/abcpatch.py) ──► dist/*.swf
+게임 폴더: ...\steamapps\common\Detective Grimoire
+패치 데이터: 45개 파일
+
+  1) 한글패치 적용
+  2) 원본으로 되돌리기
+  3) 열리지 않는 세이브 슬롯 고치기
+  0) 닫기
 ```
 
-### 핵심 주의사항
-
-- **FFDec `-importText` 은 `<폴더>/texts/*.txt` 구조를 요구합니다.** 폴더를 바로
-  주면 조용히 아무 것도 하지 않고 성공한 것처럼 종료합니다.
-- **`text:formatted` 파일은 반드시 CRLF** 여야 합니다. LF면 헤더 블록이 파싱되지
-  않고 `[xmin 23 ...]` 가 화면에 그대로 출력됩니다.
-- 임베드 폰트는 **서브셋**이라 원문에 없던 글자는 조용히 사라집니다. 한글을 넣기
-  전에 반드시 폰트를 먼저 교체해야 합니다.
-- `spacing` / `spacingpair` (커닝) 줄은 원문 글자를 참조하므로 재작성 시 제거합니다.
-- ABC는 문자열을 **인덱스로만** 참조하므로, 개수와 순서만 지키면 문자열 테이블을
-  통째로 다시 써도 안전합니다. (무변경 왕복이 바이트 단위로 일치함을 확인)
-
-## 레이아웃 보정
-
-원문 좌표를 그대로 쓰면 한글이 깨집니다. `patch_swf.py` 가 세 가지를 보정합니다.
-
-| 문제 | 보정 |
-|---|---|
-| 줄이 단어 중간에서 끊김 | `wrap_lines` — 어절 경계에서 균형 잡힌 DP 줄바꿈 |
-| 교체 폰트가 원본보다 ~12% 넓어 크레딧 등이 잘림 | `fit_scale` — 원본 `TextBounds` 에 맞게 글자 크기 축소(하한 0.72) |
-| 레코드 `x` 가 영문 폭 기준이라 정렬이 들쭉날쭉 | `realign` — 가운데 정렬 블록은 bounds 중앙 기준으로 재계산 |
-| 한글이 세로로 커서 윗줄과 부딪힘 (이름표 「제임스/경관」) | `vfit_scale` — 줄 간 잉크 충돌을 검사해 축소 |
-
-`vfit_scale` 은 **절대 기준이 아니라 원문 대비 증가분**만 봅니다. 크레딧 일부는
-1080 twips 글자를 680 twips 행간에 얹는 빡빡한 설계라, 절대 기준으로 재면 손대지도
-않은 영문 이름까지 하한(0.72)까지 줄어듭니다. 한글이 라틴 대문자(+0.754 em)보다
-높아서(+0.843 / −0.090 em) 늘어난 만큼만 보정하면 전체 3,035개 중 **37개(1.2%)** 만
-축소됩니다.
-
-`record_lines()` 가 뒤 두 가지의 전제입니다. **하나의 DefineText가 한 줄에 여러
-레코드를 둘 수 있습니다** (이름표가 `"OFFICER " + "JAMES"` 로 쪼개져 있음).
-이를 각각 다른 줄로 취급하면 `제임스` 위에 `경관` 이 겹쳐 찍힙니다.
-
-## 글자가 겹치고 획에 선이 보이던 문제
-
-첫 빌드에서 한글이 서로 붙고, 글자 안에 얇은 경계선이 보였습니다. 원인이 둘이었습니다.
-
-### ① 자간 — 폰트에 어드밴스 테이블이 없다
-
-게임의 `DefineFont3` 은 전부 **`FontFlagsHasLayout = 0`** 입니다. 원래 영문 텍스트는
-Flash Pro가 저작 시점에 각 `DefineText` 안에 어드밴스를 직접 박아넣었기 때문에
-폰트에 메트릭이 없어도 됐습니다. 그래서 FFDec가 새 글자를 넣을 때 참고할 값이 없고,
-모르는 글리프에는 **상수를 추정**해 넣습니다.
-
-`ClueGraphic` 실측 (본문 높이 600 twips 기준):
-
-| | 어드밴스 | em 환산 |
-|---|---|---|
-| Noto Sans KR 한글 실제 값 | 552 | 0.920 em |
-| FFDec가 넣은 값 | 467 | 0.778 em |
-| 글리프 잉크 폭 | 518 | 0.864 em |
-
-어드밴스가 잉크 폭보다 **51 twips 좁아서**, 옆 글자와 물리적으로 겹치고 있었습니다.
-
-`fixadvances.py` 가 `-importText` 뒤에 붙어서, `DefineFont3` 의 CodeTable로
-글리프 인덱스 → 문자를 되짚고 폰트의 실제 어드밴스로 전부 다시 씁니다.
-`TextBounds` 도 같이 넓힙니다. `patch_swf.TRACKING` (기본 `0.045` em) 이 여기에 더해집니다.
-
-> `DefineText` 비트 패킹은 원본 617개 태그를 파싱 → 재작성 → 재파싱해 **전부 바이트 일치**함을 확인했습니다.
-
-### ② 획 안의 선 — 겹친 윤곽선
-
-가변폰트를 `instantiateVariableFont` 로 정적화하면 **윤곽선이 겹친 채** 남습니다.
-한글 한 글자가 자소별 윤곽 4~8개로 이뤄지고 서로 교차합니다. 일반 렌더러는
-non-zero winding으로 처리해 티가 안 나지만, SWF는 각 edge에 좌/우 fill을 명시하는
-방식이라 **교차 지점이 전부 얇은 선으로 드러납니다.**
-
-`mkfont.py` 에서 `skia-pathops` 기반 `removeOverlaps` 로 미리 합칩니다
-(예: `관` 윤곽 8개 → 4개, `명` 7개 → 5개).
-
-## ABC 문자열의 함정
-
-메인 SWF의 상수 풀 문자열은 **인덱스로만** 참조되므로, 하나를 바꾸면 그 문자열의
-모든 용처가 함께 바뀝니다. 그런데 일부는 기계용 식별자를 겸합니다.
-
-- `DataItem.name` → `DataList._nameLookup` 의 키, `byName("cogs")` 같은 리터럴
-- `char.name` → 오디오 경로에 그대로 들어감: `"surprised/" + name + "/x.mp3"`
-- `area.name` → MovieClip 프레임 레이블 `gotoAndStop(area.name)`, 자식 조회 키
-
-`abc_safety.py` 가 이런 문자열 11개(`Harper`, `Sally Spears`, `Intro` 등)를
-차단합니다. 번역했다면 음성이 조용히 로드되지 않고 장소 화면이 깨졌을 것입니다.
-
-## 번역되지 않는 부분 (원리상 불가)
-
-| 대상 | 이유 |
-|---|---|
-| `SLOT`, `CHALLENGES`, `TAP TO CREATE NEW SAVE FILE`, `BACK TO MENU`, `Area: SWAMP DOCK`, `PLAY` / `OPTIONS` / `ACHIEVEMENTS` / `QUIT` / `CREDITS` | 텍스트가 아니라 **벡터 도형으로 그려진 그림**. 다시 그려야 함 |
-| 인트로·엔딩 등 컷신 | `assets/mp4-720/*.mp4` 로 **사전 렌더링된 영상**. 영상 편집 필요 |
-| 제작진 이름 | 실명이라 그대로 둠 (역할 이름만 번역) |
-
-## 사용법
-
-```bash
-# 0) 사전 준비 (한 번만)
-python -m pip install fonttools brotli skia-pathops
-#    tools/ffdec/ 에 JPEXS FFDec 26.2.1 배치
-python work/mkfont.py                # Noto Sans KR Bold 정적 폰트 생성
-
-# 1) 원문 추출
-python work/extract_all.py
-python work/build_manifest.py
-python work/make_chunks.py
-
-# 2) 번역  ->  work/ko/*.json   (id -> 한국어 문자열)
-
-# 3) 빌드
-python work/build.py                 # dist/ 에 결과 생성
-python work/build.py --install       # 게임에 바로 설치
-
-# 4) 검수
-python work/check_fit.py --json work/overflow.json   # 말풍선 넘침 검사
-```
-
-## 검증 결과
-
-빌드 산출물 기준:
-
-- 에셋 SWF **44개** 패치, **글리프 누락 0건**
-- 메인 SWF 상수 풀 **8,190개 유지**, 한국어 **92개 전부 삽입**, 영문 원문 **0개 잔존**,
-  식별자 **11개 그대로**
-- 여러 줄 단서 텍스트 **275줄 전부 중앙 정렬 오차 0**
-
-실제 플레이 확인:
-
-| 화면 | 결과 |
-|---|---|
-| 타이틀 / 저장 슬롯 | 「저장 파일을 선택하세요.」 정상 |
-| 헤드폰 안내 | 정상 |
-| 인트로 대사 (그리모어) | 말풍선 안 4줄 중앙 정렬 정상 |
-| 화자 이름표 | 「그리모어」 · 「제임스 경관」 정상 (겹침 수정 완료) |
-| 경찰 파일 단서 | 4개 문단 전부 정상 |
-| 종료 확인 대화상자 | 「정말 게임을 / 종료하시겠습니까?」 + 「예 / 아니요」 정상 |
-| 크레딧 | 잘림 해소 |
+명령줄로도 됩니다: `DetectiveGrimoire-KR-Patch.exe --apply` / `--restore` / `--fix-save`
 
 ## 되돌리기
 
-`backup/` 에 원본 SWF 67개가 그대로 있습니다.
+같은 exe 를 실행하고 `2` 를 누르면 됩니다. 패치할 때 원본을 게임 폴더의
+`backup_kr_patch\` 에 복사해 두므로 언제든 복구됩니다.
 
-```bash
-cp -r backup/swf-dsk-original/* "<게임경로>/assets/swf-dsk/"
-cp backup/DetectiveGrimoireDesktopSteam.swf "<게임경로>/"
-```
+Steam에서 **속성 → 설치된 파일 → 게임 파일 무결성 확인** 을 돌려도 원본으로
+돌아갑니다.
 
-Steam 라이브러리에서 **속성 → 설치된 파일 → 게임 파일 무결성 확인**을 해도
-원본으로 복구됩니다.
+## 세이브 슬롯이 눌러도 안 열릴 때
 
-세이브 파일은 게임 폴더가 아니라 아래에 있어 패치와 무관합니다. 테스트 전
-`backup/saves/` 에 복사해 두었습니다.
+**패치와 무관한 원본 게임의 버그입니다.** 원본 파일로 되돌려도 똑같이 재현됩니다.
 
-```
-%APPDATA%\air.com.sfbgames.DetectiveGrimoire\Local Store\#SharedObjects\DetectiveGrimoireDesktopSteam.swf\DetectiveGrimoireSave.sol
-```
-
-## 세이브 슬롯이 눌러도 안 열릴 때 (게임 자체 버그)
-
-패치와 무관한 **원본 게임의 버그**입니다. 원본 파일로 되돌려도 똑같이 재현됩니다.
-
-`TitleScreen.onLoadSlot` 은 이렇게 동작합니다.
+게임은 세이브를 불러올 때 이렇게 합니다.
 
 ```actionscript
-screenManager.replaceScreen(new HeadphonesScreen(
-    Area(GameData.areaList.byID(saveData.areaCurrent)).screen))
+Area(GameData.areaList.byID(saveData.areaCurrent)).screen
 ```
 
-`AreaList.currentAreaID` 의 초깃값은 **-1** 이고, 플레이어가 실제로 어떤 장소에
-들어가야 진짜 id로 바뀝니다. 그 전에 — 즉 **인트로 도중에** — 게임이 종료되면
-자동저장이 `areaCurrent = -1` 을 기록합니다. 다시 켜서 그 슬롯을 누르면
-`byID(-1)` 이 `undefined` 를 돌려주고, `Area(undefined)` 는 `null` 이 되며,
-`.screen` 접근이 예외를 던집니다. 그 예외가 내부에서 삼켜져서 **슬롯 정보는
-멀쩡히 보이는데 눌러도 아무 일도 일어나지 않습니다.**
+`areaCurrent` 는 −1 로 시작해서, 플레이어가 실제로 어떤 장소에 들어가야 진짜
+번호로 바뀝니다. 그 전에 — 즉 **인트로 도중에** — 게임이 꺼지면 자동저장이
+−1 을 기록합니다. 다시 켜서 그 슬롯을 누르면 `byID(-1)` 이 아무것도 돌려주지
+않아 예외가 나고, 게임이 그 예외를 조용히 삼킵니다. **슬롯 정보는 멀쩡히
+보이는데 눌러도 아무 일도 일어나지 않습니다.**
 
-`work/readsol.py` 로 진단하고 `work/fixsol.py` 로 고칩니다.
+patcher 메뉴에서 `3` 을 누르면 고쳐집니다. 세이브는 `.bak` 으로 백업됩니다.
+
+## 번역되지 않는 부분
+
+| 대상 | 이유 |
+|---|---|
+| `SLOT`, `PLAY`, `TAP TO CREATE NEW SAVE FILE`, `BACK TO MENU`, `Area: SWAMP DOCK` 등 | 텍스트가 아니라 **벡터 도형으로 그려진 그림**입니다. 다시 그려야 합니다 |
+| 인트로·엔딩 컷신 | `assets/mp4-720/*.mp4` 로 **사전 렌더링된 영상**입니다 |
+| 제작진 이름, 저작권 문구 | 실명·법적 고지라 원문 그대로 둡니다 |
+
+## 동작 방식
+
+패치 파일에는 게임 에셋이 들어 있지 않습니다. 원본 SWF를 **사전(dictionary)으로
+쓴 zstd 델타**만 담깁니다. SWF 용량의 대부분은 번역이 건드리지 않는 그림이라,
+49MB 분량이 **2.5MB** 로 줄어듭니다.
+
+```
+원본 SWF (사용자 PC)  ──┐
+                        ├─► zstd 델타 복원 ─► 한글 SWF
+patch 델타 (2.5MB)  ────┘
+```
+
+적용 전에 원본의 SHA-256을, 적용 후에 결과의 SHA-256을 확인합니다. 하나라도
+어긋나면 아무것도 쓰지 않고 멈춥니다.
+
+---
+
+# 개발자용
+
+## 게임이 텍스트를 저장하는 방식
+
+| 위치 | 내용 | 분량 |
+|---|---|---|
+| `assets/swf-dsk/**/*.swf` 의 **DefineText** | 화면에 보이는 거의 모든 대사·단서·메뉴 | 3,278 태그 |
+| 메인 SWF 의 **ABC 상수 풀** | 추리 미니게임 문장 조각, 확인 대화상자 | 103 문자열 |
+| 각 SWF 의 **DefineFont2/3** | 서브셋된 임베드 폰트 (원문에 쓰인 글자만) | SWF당 1~3개 |
+
+`assets/xml/` 은 TexturePacker 아틀라스, `assets/mp3/` 파일명은 음성 클립 ID라
+화면 텍스트가 없습니다.
+
+**AIR 무결성** — `META-INF/signatures.xml` 이 에셋 949개를 서명하지만, 캡티브
+런타임 빌드는 실행 시 검증하지 않습니다.
+
+## 파이프라인
+
+```
+원본 SWF
+   ├─ FFDec -export text  ──►  work/text_raw/**/texts/*.txt   (text:formatted)
+   │                              └─ work/chunks/*.json ─► 번역 ─► work/ko/*.json
+   ├─ 글자 집합 계산 ──►  Noto Sans KR Bold 서브셋 (윤곽 겹침 제거)
+   ├─ FFDec -replace <fontId> <ttf>
+   ├─ FFDec -importText
+   └─ fixadvances.py            (글리프 어드밴스 실측값 재작성 + 자간)
+             └──►  dist/  ──►  makepatch.py  ──►  release/*.dgpatch
+```
 
 ```bash
-SOL="$APPDATA/air.com.sfbgames.DetectiveGrimoire/Local Store/#SharedObjects/DetectiveGrimoireDesktopSteam.swf/DetectiveGrimoireSave.sol"
+python -m pip install fonttools brotli skia-pathops zstandard pyinstaller
+# tools/ffdec/ 에 JPEXS FFDec 26.2.1 배치
 
-python work/readsol.py "$SOL"              # areaCurrent 확인
-python work/fixsol.py  "$SOL" --dry-run    # 미리보기
-python work/fixsol.py  "$SOL"              # areaCurrent -> 0 (늪 선착장), .bak 자동 생성
+python work/mkfont.py          # 한글 베이스 폰트
+python work/extract_all.py     # 원문 추출 (본인 게임에서)
+python work/build_manifest.py
+python work/make_chunks.py
+#   -> 번역 -> work/ko/*.json
+python work/build.py           # dist/ 생성
+python work/build.py --install # 게임에 바로 설치
+python work/makepatch.py       # 배포용 .dgpatch
+python patcher/build_exe.py    # 배포용 exe
 ```
 
-`readsol.py` 는 SOL의 AMF3를 파싱하고, `fixsol.py` 는 해당 정수 값의 바이트
-구간만 바꿔 쓴 뒤 SOL 헤더의 길이 필드를 다시 계산합니다. AMF3의 문자열·객체
-참조 테이블은 바이트 위치가 아니라 **등장 순서**를 쓰므로, 값의 길이가 달라져도
-안전합니다.
+## 함정 다섯 가지
 
-## 라이선스 / 주의
+**1. FFDec `-importText` 은 `<폴더>/texts/*.txt` 구조를 요구합니다.**
+폴더를 바로 주면 아무 것도 하지 않고 성공한 것처럼 종료합니다.
 
-- 게임의 텍스트·에셋 저작권은 SFB Games Ltd. 에 있습니다. 이 저장소는 **개인용
-  번역 작업물**이며 비공개로 유지합니다.
-- 사용 폰트: **Noto Sans KR** (SIL Open Font License 1.1)
-- 도구: **JPEXS Free Flash Decompiler** (GPLv3) — 저장소에 포함하지 않고
-  릴리스에서 내려받습니다.
+**2. `text:formatted` 파일은 반드시 CRLF** 여야 합니다. LF면 헤더가 파싱되지
+않고 `[xmin 23 ...]` 가 화면에 그대로 출력됩니다.
+
+**3. 폰트에 어드밴스 테이블이 없습니다.** 이 게임의 `DefineFont3` 은 전부
+`FontFlagsHasLayout = 0` 입니다. 영문은 Flash Pro가 저작 시점에 어드밴스를 각
+`DefineText` 안에 박아넣어서 폰트 메트릭이 필요 없었습니다. 그래서 FFDec가 새
+글자를 넣을 때 잴 기준이 없어 **상수를 추정**합니다.
+
+| (본문 높이 600 twips) | 어드밴스 | em |
+|---|---|---|
+| Noto Sans KR 한글 실제 | 552 | 0.920 |
+| FFDec가 넣은 값 | 467 | 0.778 |
+| 글리프 잉크 폭 | 518 | 0.864 |
+
+잉크보다 51 twips 좁아서 옆 글자와 **물리적으로 겹칩니다.** `fixadvances.py` 가
+`DefineFont3` 의 CodeTable로 글리프→문자를 되짚어 전부 다시 씁니다.
+(원본 617개 태그를 파싱→재작성→재파싱해 바이트 일치 확인)
+
+**4. 가변폰트 정적화는 윤곽선을 겹친 채로 남깁니다.** 한글 한 글자가 자소별
+윤곽 4~8개로 교차하는데, SWF는 각 edge에 좌/우 fill을 명시하는 방식이라
+**교차 지점이 전부 얇은 선으로 드러납니다.** `skia-pathops` 로 미리 합칩니다.
+
+**5. ABC 문자열은 인덱스로만 참조됩니다.** 하나를 바꾸면 모든 용처가 함께
+바뀌는데, 일부는 기계용 식별자를 겸합니다.
+
+- `DataItem.name` → `DataList._nameLookup` 키, `byName("cogs")` 리터럴
+- `char.name` → 오디오 경로: `"surprised/" + name + "/x.mp3"`
+- `area.name` → MovieClip 프레임 레이블 `gotoAndStop(area.name)`
+
+`abc_safety.py` 가 이런 문자열 11개(`Harper`, `Sally Spears`, `Intro` 등)를
+차단합니다. 번역했다면 음성이 조용히 안 나오고 장소 화면이 깨졌을 겁니다.
+
+## 레이아웃 보정
+
+| 문제 | 보정 |
+|---|---|
+| 줄이 단어 중간에서 끊김 | `wrap_lines` — 어절 경계 균형 DP |
+| 교체 폰트가 ~12% 넓어 크레딧이 잘림 | `fit_scale` — `TextBounds` 에 맞게 축소(하한 0.72) |
+| 레코드 `x` 가 영문 폭 기준이라 정렬이 들쭉날쭉 | `realign` — bounds 중앙 기준 재계산 |
+| 한글이 세로로 커서 윗줄과 부딪힘 | `vfit_scale` — 줄 간 잉크 충돌 검사 |
+
+`record_lines()` 가 전제입니다. **하나의 DefineText가 한 줄에 여러 레코드를 둘
+수 있습니다** (이름표가 `"OFFICER " + "JAMES"`). 각각 다른 줄로 취급하면
+`제임스` 위에 `경관` 이 겹쳐 찍힙니다.
+
+`vfit_scale` 은 절대 기준이 아니라 **원문 대비 증가분**만 봅니다. 크레딧 일부는
+1080 twips 글자를 680 twips 행간에 얹는 원래부터 빡빡한 설계라, 절대 기준으로
+재면 손대지도 않은 영문 이름까지 하한까지 줄어듭니다.
+
+## 저장소에 없는 것
+
+게임 원문 스크립트(`work/manifest_en.json`, `work/chunks/*.json`)는 저작권이
+SFB Games Ltd. 에 있어 포함하지 않았습니다. 게임을 갖고 계시면
+`extract_all.py` → `build_manifest.py` → `make_chunks.py` 로 본인 설치본에서
+직접 뽑을 수 있습니다.
+
+## 라이선스
+
+- 도구·스크립트: MIT
+- 번역문(`work/ko/`): 2차 저작물. 개인적 사용에 한합니다
+- 게임의 텍스트·에셋 저작권: **SFB Games Ltd.**
+- 폰트: **Noto Sans KR** (SIL Open Font License 1.1)
+- **JPEXS Free Flash Decompiler** (GPLv3) — 포함하지 않고 릴리스에서 받습니다
+
+이 프로젝트는 SFB Games 와 무관한 팬 제작물입니다. 권리자의 요청이 있으면
+즉시 내리겠습니다.

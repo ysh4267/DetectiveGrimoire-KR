@@ -416,9 +416,18 @@ def patch(key, translations, outdir, verbose=True, extra_chars=''):
             continue  # DefineEditText -- handled separately
         fonts.update(ffdectext.fonts_used(parsed))
 
+        new_lines = translations.get(cid)
+        if new_lines is not None:
+            # "[space N]" is not a record, it is an inline advance tweak FFDec
+            # emits for the preceding run. It is authored for the original
+            # glyph widths, fixadvances rewrites those anyway, and leaving an
+            # orphaned one behind makes the import fail outright
+            # ("space parameter must be placed after some text").
+            parsed['records'] = [r for r in parsed['records']
+                                 if not re.fullmatch(r'space -?\d+', r['params'].strip())]
+
         nrec = len(parsed['records'])
         groups = record_lines(parsed)
-        new_lines = translations.get(cid)
         if new_lines is not None:
             text = new_lines if isinstance(new_lines, str) else ' '.join(new_lines)
             # wrap to the number of VISUAL lines, then hand each line to the

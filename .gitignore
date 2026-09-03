@@ -13,3 +13,17 @@ dist/
 __pycache__/
 *.pyc
 work/test/
+
+# The game's own English script -- copyright SFB Games Ltd.
+# Regenerate from your own install: extract_all.py -> build_manifest.py -> make_chunks.py
+work/manifest_en.json
+work/chunks/*.json
+!work/chunks/_index.json
+work/extract/all_strings.txt
+work/extract/strings.json
+work/abc_ui_en.json
+work/overflow.json
+
+# build output
+release/
+patcher/build/
