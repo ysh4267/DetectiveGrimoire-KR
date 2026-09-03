@@ -20,7 +20,7 @@ def post(url, params):
     data = urllib.parse.urlencode(params).encode()
     req = urllib.request.Request(url, data=data, headers={
         'Accept': 'application/json',
-        'User-Agent': 'claude-code-device-flow',
+        'User-Agent': 'grimoire-kr-device-flow',
     })
     with urllib.request.urlopen(req, timeout=30) as r:
         return json.loads(r.read().decode())

@@ -6,9 +6,10 @@ param(
   [string]$Group = ''            # or every Korean file whose path contains this
 )
 
-# no literal non-ASCII here: Windows PowerShell 5.1 reads .ps1 as ANSI and
+# derived from this script's own location, so the repo can live anywhere --
+# and no literal non-ASCII: Windows PowerShell 5.1 reads .ps1 as ANSI and
 # would mangle a hard-coded Korean path
-$proj = Join-Path $env:USERPROFILE 'Desktop\Claude Space\DetectiveGrimoire-KR'
+$proj = Split-Path -Parent $PSScriptRoot
 $game = 'e:\Program Files\SteamLibrary\steamapps\common\Detective Grimoire'
 $orig = Join-Path $proj 'backup\swf-dsk-original'
 $kor  = Join-Path $proj 'dist\assets\swf-dsk'

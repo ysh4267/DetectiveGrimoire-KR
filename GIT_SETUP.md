@@ -24,8 +24,9 @@ gh auth status
 
 ## 2. 프라이빗 저장소 생성 + 푸시
 
+저장소 폴더에서:
+
 ```powershell
-cd "$env:USERPROFILE\Desktop\Claude Space\DetectiveGrimoire-KR"
 gh repo create DetectiveGrimoire-KR --private --source=. --remote=origin --push
 ```
 
