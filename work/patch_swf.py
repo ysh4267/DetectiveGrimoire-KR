@@ -14,6 +14,7 @@ sys.path.insert(0, HERE)
 import ffdectext
 import swffonts
 import fixadvances
+import keepfont
 
 ROOT = os.path.dirname(HERE)
 GAME = r'e:/Program Files/SteamLibrary/steamapps/common/Detective Grimoire'
@@ -401,6 +402,10 @@ def patch(key, translations, outdir, verbose=True, extra_chars=''):
     os.makedirs(imp)
 
     charset = set(ALWAYS) | set(extra_chars)
+    # ids whose text genuinely differs from the original. The translation files
+    # also carry entries that came back unchanged (proper names, numbers), and
+    # those must keep the game's own typeface.
+    changed_ids = set()
     # every embedded font gets swapped, including ones only a dynamic
     # DefineEditText references (those never appear in a DefineText record)
     fonts = set(swffonts.scan(src)[0])
@@ -416,8 +421,15 @@ def patch(key, translations, outdir, verbose=True, extra_chars=''):
             continue  # DefineEditText -- handled separately
         fonts.update(ffdectext.fonts_used(parsed))
 
+        original_text = ' '.join(''.join(r['text'] for r in parsed['records']).split())
+
         new_lines = translations.get(cid)
         if new_lines is not None:
+            candidate = new_lines if isinstance(new_lines, str) else ' '.join(new_lines)
+            if ' '.join(candidate.split()) == original_text:
+                new_lines = None                 # came back unchanged
+        if new_lines is not None:
+            changed_ids.add(cid)
             # "[space N]" is not a record, it is an inline advance tweak FFDec
             # emits for the preceding run. It is authored for the original
             # glyph widths, fixadvances rewrites those anyway, and leaving an
@@ -473,12 +485,19 @@ def patch(key, translations, outdir, verbose=True, extra_chars=''):
     # 3) rewrite the glyph advances from the font's real metrics -- FFDec had
     #    none to work from, so it guessed and the guess was tighter than the
     #    glyphs themselves
+    stage3 = os.path.join(tmp, 'stage3.swf')
+    n_texts, n_adv = fixadvances.fix(stage2, stage3, BASE_FONT, TRACKING)
+
+    # 4) give untranslated text its original typeface back. The font swap is
+    #    all-or-nothing per font id, so English that shares a font with Korean
+    #    labels gets dragged into Noto too -- obvious under artwork still drawn
+    #    in the game's own face.
     out = os.path.join(outdir, os.path.basename(src))
-    n_texts, n_adv = fixadvances.fix(stage2, out, BASE_FONT, TRACKING)
+    n_keep, n_clone = keepfont.restore(src, stage3, out, changed_ids)
 
     if verbose:
-        print('%-40s fonts=%-14s chars=%-5d translated=%-4d scaled=%-4d adv=%-6d missing=%d'
-              % (key, sorted(fonts), n_chars, n_tr, n_scaled, n_adv, len(sev)))
+        print('%-40s fonts=%-12s chars=%-5d tr=%-4d scaled=%-4d adv=%-6d kept=%-4d missing=%d'
+              % (key, sorted(fonts), n_chars, n_tr, n_scaled, n_adv, n_keep, len(sev)))
         for l in sev[:5]:
             print('    ', l.strip())
     shutil.rmtree(tmp, ignore_errors=True)
